@@ -6,8 +6,12 @@ body {
     background-color: coral;
 }
 
-img {
-    width: 200px;
+.header_white{
+    background-color: white;
+}
+
+.body_white{
+    background-color: white;
 }
 
 .title_01{
@@ -25,6 +29,10 @@ img {
     text-align: center;
 }
 
+.title_side{
+    font-size: 150%;
+}
+
 .Par_01{
     font-size: 100%;
     text-align: center;
@@ -33,7 +41,10 @@ img {
 .Par_02{
     font-size: 100%;
     text-align: center;
-    @extend .blue, .lighten-4;
+}
+
+img {
+    width: 200px;
 }
 
 .portfolioimg{
@@ -41,4 +52,24 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.img_02{
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img_03{
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.underline{
+    text-decoration: underline;
 }
