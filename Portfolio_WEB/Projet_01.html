@@ -13,7 +13,7 @@
     <body class="body_white">
         <div class="row">
 
-          <div class="col s0 m1"> <a href="index.html"> <img src="https://image.flaticon.com/icons/png/512/93/93634.png", class = "img_03"> </a> </div>
+          <div class="col s0 m1"> <a href="index.html"> <img src="https://image.flaticon.com/icons/png/512/93/93634.png", class = "img_02"> </a> </div>
           <div class="col s9 m10"> <h1 class = "title_02"> The Game Of Life </h1> </div>
 
         </div>
@@ -36,6 +36,23 @@
               tous les patterns palcable sont aussi tournable dans 4 directions(c'est une fonctionnalité que je n'ais pas trouver sur d'autre jeu de la vie). 
               Vous pouvez tester le projet sur la page itch.io du projet accessible en bas de cette page.
             </p>
+
+            <h1 class = "white-text text-darken-1, title_02"> Gif du projet finale : </h1>
+
+            <div class="row">
+              <div class="col s4 m4">
+                <img src="Assets/GOL_Tutrtles.gif", class = "img_04">
+              </div>
+
+              <div class="col s4 m4">
+                <img src="Assets/GOL_Pulsar.gif", class = "img_04">
+              </div>
+
+              <div class="col s4 m4">
+                <img src="Assets/GOL_Ghost_Turtles.gif", class = "img_04">
+              </div>
+            </div>
+
           </div>
         </div>
 
@@ -47,6 +64,7 @@
               A part les fonctionnalitée principale le projet possède d'autres fonctinnalitée :
               <p class="white-text text-darken-1"> fondamentales : click droit pour se déplacer sur la grille, roullette de la souris pour zoomer </p>
               <p class="white-text text-darken-1"> Le projet permet aussi de jouer le jeu en automatique ou manuel et de définir le temps entre chaque tours. </p>
+              <p class="white-text text-darken-1"> Afficher/cacher la grille. Désactiver l'affichage des tiles blanches qui remplisse le tableau. </p>
               <p class="white-text text-darken-1"> Le projet possède aussi un système de menu pour accèder à chaque fonctionnalitée et ranger les patterns dans leur groupe. </p>
             </p>
 
@@ -55,13 +73,47 @@
               Le projet est fait sur Unity, j'ai d'habord créer un script isolé qui simule uniquement le jeu de la vie sur un tableau à double entrée de bolean, 
               le jeu est ensuite affiché en utilisant les tilemap de unity
             </p>
+
+            <p class="white-text text-darken-1">
+              Optimisation : 
+            </p>
+
+            <p class="white-text text-darken-1">
+              Le projet a eu besoin d'optimisation à un certain point, l'optimisation c'est faite avec la manière d'affiché le jeu, 
+              j'ai donc utiliser différentes techniques : uniquement mettre les tiles sur la tilemap si elles ont besoin d'être changer
+              (avant de mettre une tile sur un emplacement ont regarde la "nature" de la tile à cette emplacement, ont aurait aussi pu enregistré le tableau avant le tour et le comparé
+              à celui après pour savoir quelle tile aurait besoin d'être changer(solution non tester)).
+            </p>
+
+            <p class="white-text text-darken-1"> 
+              La plus grosse optimisation à été d'afficher uniquement une certaine partie du tableau(elle est affiché toujours au même endroit déplacer la grille est enfaite déplacer
+              la partie affiché).
+            </p>
+
+            <h3 class = "white-text text-darken-1, title_side"> Code : </h3>
+
+            <p class="white-text text-darken-1"> 
+              Je stoque les pattern en tant que class qui contienent une list de Vector2Int qui représente toutes les cellule du pattern
+              (la position 00 sera l'emplacement de la souris), une position maximal qui est le x et le y max que le pattern atteind
+              (qui sert à ne pas pouvoir placer un pattern en dehord des limite de la grille et pour pouvoir tourner les patterns).
+              La list de Vector2Int de certain pattern peut être très longue j'ai donc essayer de la rendre lissible même pour des pattern asser gros comme la tortue :
+            </p>
+
+            <img src="Assets/Code Turtle.PNG", class="img_03">
+
+            <h3 class = "white-text text-darken-1, title_side"> Gif d'avancé du projet : </h3>
+            <img src="GosperGliderGun.gif", class="portfolioimg">
+
+            <h3 class = "white-text text-darken-1, title_side"> Post mortem : </h3>
+            <p class="white-text text-darken-1"> 
+              Ce projet ma permit de partiqué et d'apprendre énormément sur l'utilisation des lambda expression que j'avais commencer à utiliser à la fin de mon dernier projet.
+            </p>
+
           </div>
         </div>
 
-        <img src="GosperGliderGun.gif", class="portfolioimg">
-
         <h2 class = "title_03"> Page Itch.io du projet(tester le projet) </h2>
-        <a href="https://yoan-lechevalier.itch.io/game-of-life-in-unity"> <img src="https://static.itch.io/images/app-icon.png", class = "img_02"> </a> </div>
+        <a href="https://yoan-lechevalier.itch.io/game-of-life-in-unity"> <img src="https://static.itch.io/images/app-icon.png", class = "img_100px"> </a> </div>
 
     </body>
 </html>

@@ -1,9 +1,9 @@
 header{
-    background-color: coral;
+    background-color: #455a64;
 }
 
 body {
-    background-color: coral;
+    background-color: #455a64;
 }
 
 .header_white{
@@ -55,14 +55,31 @@ img {
 }
 
 .img_02{
-    width: 100px;
-    height: 100px;
+    width: 70%;
+    height: 10%;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
 .img_03{
+    width: 80%;
+    height: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img_04{
+    width: 80%;
+    height: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.img_100px{
     width: 100px;
     height: 100px;
     display: block;
