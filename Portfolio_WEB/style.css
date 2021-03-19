@@ -102,6 +102,22 @@ img {
     margin-right: auto;
 }
 
+.img_07{
+    width: 100%;
+    height: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img_08{
+    width: 50%;
+    height: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .img_100px{
     width: 100px;
     height: 100px;
