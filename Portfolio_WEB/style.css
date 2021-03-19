@@ -1,9 +1,9 @@
 header{
-    background-color: #455a64;
+    background-color: #263238;
 }
 
 body {
-    background-color: #455a64;
+    background-color: #263238;
 }
 
 .header_white{
@@ -89,6 +89,14 @@ img {
 .img_05{
     width: 180px;
     height: 325px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img_06{
+    width: 70%;
+    height: 60%;
     display: block;
     margin-left: auto;
     margin-right: auto;

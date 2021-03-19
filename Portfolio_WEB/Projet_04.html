@@ -24,7 +24,13 @@
             <p class = "black-text text-darken-1, Par_01">
 
             <p class="black-text text-darken-1, Par_01">
-              présentation
+              Réaliser en groupe. Ce projet est un tower defence avec plusieurs types de tourelles que l'ont peut amélioré, le joueur peut également se transformer en tourelle, 
+              il est limité par un nombre de munitions, les ennemis peuvent lâcher des munitions après leurs mort, il y'a plusieurs type d'ennemis, plus ont va loin dans
+              les vagues plus des ennemis puissant apparaîtront.
+            </p>
+
+            <p class="black-text text-darken-1, Par_01">
+              J'ai personnellement réaliser : système de tourelles, toutes les tourelles, placement des ponts, forme de tourelle du joueur.
             </p>
 
             <h1 class = "black-text text-darken-1, title_02"> Images du projet finale : </h1>
@@ -46,17 +52,30 @@
           </div>
         </div>
 
+        <div class="video-container">
+          <iframe width="853" height="480" src="https://www.youtube.com/watch?v=nnnRHDASJHk" frameborder="0" allowfullscreen></iframe>
+        </div>
+
         <div class="container"> 
           <div class="card-panel yellow accent-1, z-depth-3">
             <h1 class = "black-text text-darken-1, title_02"> Projet </h1>
             <h3 class = "black-text text-darken-1, title_side"> Toutes les fonctionnalitée : </h3>
             <p class="black-text text-darken-1">
-
+              Toutes les tourelles ont des stats différentes : dégats, vitesse d'attaque, portée, coût.
+              Le joueur peut placer plusieurs type de tourelles : tourelle basique(tirs un projectile droit), canon(zone de dégats), tourelle à bulle(ralenti les ennemies), 
+              tourelle piège(place un piège sur la route), boîte à musique(augmente les dégats des tourelles autour).
+              Le joueur peut aussi améliorer les tourelles, pour quelles gagne des stats et évolue graphiquement. Le joueur peut placer des ponts sur la route car elle est bloqué
+              pendant les vagues
             </p>
 
             <h3 class = "black-text text-darken-1, title_side"> Technique : </h3>
             <p class="black-text text-darken-1">
-              technique
+              J'ai créer une class de base pour toutes les tourelles qui permet de les amélioré.
+              Toutes les tourelles une fois placer rentre dans un état de construction ou elle ne peuvent rien faire, ont peut définir leurs prochain état au passage à l'état de 
+              construction.
+
+              le background est une tilemap différente de la route se qui permet d'activé ou de désactivé le collider sur la tilemap de route pour empêcher le joueur de passer
+              sur la route pendant les vagues
             </p>
 
             <h3 class = "black-text text-darken-1, title_side"> Code : </h3>
