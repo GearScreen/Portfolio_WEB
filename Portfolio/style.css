@@ -1,0 +1,155 @@
+header{
+    background-color: #263238;
+}
+
+body {
+    background-color: #263238;
+}
+
+.header_white{
+    background-color: white;
+}
+
+.body_white{
+    background-color: white;
+}
+
+.header_blue{
+    background-color: #304ffe;
+}
+
+.body_blue{
+    background-color: #304ffe;
+}
+
+.title_01{
+    font-size: 400%;
+    text-align: center;
+}
+
+.title_02{
+    font-size: 150%;
+    text-align: center;
+}
+
+.title_03{
+    font-size: 100%;
+    text-align: center;
+}
+
+.title_side{
+    font-size: 150%;
+}
+
+.Par_01{
+    font-size: 100%;
+    text-align: center;
+}
+
+.Par_02{
+    font-size: 100%;
+    text-align: center;
+}
+
+img {
+    width: 200px;
+}
+
+.portfolioimg{
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img_02{
+    width: 70%;
+    height: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img_03{
+    width: 80%;
+    height: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img_04{
+    width: 80%;
+    height: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img_05{
+    width: 180px;
+    height: 325px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img_06{
+    width: 70%;
+    height: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img_07{
+    width: 100%;
+    height: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img_08{
+    width: 50%;
+    height: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img_09{
+    width: 400px;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img_10{
+    width: 492px;
+    height: 242px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img_100px{
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img_arrow{
+    width: 35%;
+    height: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.underline{
+    text-decoration: underline;
+}
