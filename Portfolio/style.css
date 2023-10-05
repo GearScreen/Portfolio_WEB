@@ -1,4 +1,4 @@
-header{
+header {
     background-color: #263238;
 }
 
@@ -6,63 +6,91 @@ body {
     background-color: #263238;
 }
 
-.header_white{
-    background-color: white;
-}
-
-.body_white{
-    background-color: white;
-}
-
-.header_blue{
-    background-color: #304ffe;
-}
-
-.body_blue{
-    background-color: #304ffe;
-}
-
-.title_01{
+.title_01 {
     font-size: 400%;
     text-align: center;
 }
 
-.title_02{
+.title_02 {
     font-size: 150%;
     text-align: center;
 }
 
-.title_03{
+.title_03 {
     font-size: 100%;
     text-align: center;
 }
 
-.title_side{
+.title_side {
     font-size: 150%;
 }
 
-.Par_01{
+.title_side2 {
+    font-size: 125%;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+}
+
+/*#region Colors*/
+
+.body_white {
+    background-color: white;
+}
+
+.body_red {
+    background-color: darkred;
+}
+
+.body_limegreen {
+    background-color: limegreen;
+}
+
+.body_blue {
+    background-color: #304ffe;
+}
+
+.color_gray {
+    color: gray;
+}
+
+.color_red {
+    color: red;
+}
+
+.color_green {
+    color: green;
+}
+
+.color_blue {
+    color: blue;
+}
+
+/*#endregion*/
+
+.Par_01 {
     font-size: 100%;
     text-align: center;
 }
 
-.Par_02{
-    font-size: 100%;
-    text-align: center;
-}
+/*#region Images*/
 
 img {
     width: 200px;
 }
 
-.portfolioimg{
+.portfolioimg {
     width: 30%;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.img_02{
+.img_02 {
     width: 70%;
     height: 10%;
     display: block;
@@ -70,7 +98,7 @@ img {
     margin-right: auto;
 }
 
-.img_03{
+.img_03 {
     width: 80%;
     height: 40%;
     display: block;
@@ -78,7 +106,7 @@ img {
     margin-right: auto;
 }
 
-.img_04{
+.img_04 {
     width: 80%;
     height: 20%;
     display: block;
@@ -86,7 +114,7 @@ img {
     margin-right: auto;
 }
 
-.img_05{
+.img_05 {
     width: 180px;
     height: 325px;
     display: block;
@@ -94,7 +122,7 @@ img {
     margin-right: auto;
 }
 
-.img_06{
+.img_06 {
     width: 70%;
     height: 60%;
     display: block;
@@ -102,7 +130,7 @@ img {
     margin-right: auto;
 }
 
-.img_07{
+.img_07 {
     width: 100%;
     height: 5%;
     display: block;
@@ -110,7 +138,7 @@ img {
     margin-right: auto;
 }
 
-.img_08{
+.img_08 {
     width: 50%;
     height: 5%;
     display: block;
@@ -118,7 +146,7 @@ img {
     margin-right: auto;
 }
 
-.img_09{
+.img_09 {
     width: 400px;
     height: 300px;
     display: block;
@@ -126,7 +154,7 @@ img {
     margin-right: auto;
 }
 
-.img_10{
+.img_10 {
     width: 492px;
     height: 242px;
     display: block;
@@ -134,7 +162,53 @@ img {
     margin-right: auto;
 }
 
-.img_100px{
+.img_11 {
+    width: 541px;
+    height: 266px;
+    display: block;
+}
+
+.img_12 {
+    width: 442px;
+    height: 217px;
+    display: block;
+}
+
+.img_13 {
+    width: 500px;
+    height: 455px;
+    display: block;
+}
+
+.img_14 {
+    width: 1015px;
+    height: 248px;
+    display: block;
+}
+
+.img_15 {
+    width: 533px;
+    height: 25px;
+    display: block;
+}
+
+.img_16 {
+    width: 94px;
+    height: 28px;
+    display: block;
+}
+
+.Mauto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Margin10 {
+    margin-left: 10%;
+    margin-right: auto;
+}
+
+.img_100px {
     width: 100px;
     height: 100px;
     display: block;
@@ -142,7 +216,7 @@ img {
     margin-right: auto;
 }
 
-.img_arrow{
+.img_arrow {
     width: 35%;
     height: 5%;
     display: block;
@@ -150,6 +224,18 @@ img {
     margin-right: auto;
 }
 
-.underline{
+.bgImage_01 {
+    background-image: url("Assets/DE_BG.png");
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/*#endregion*/
+
+.underline {
     text-decoration: underline;
 }

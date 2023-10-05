@@ -1,0 +1,305 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link rel="icon" href="http://example.com/favicon.png">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+
+    <div class="bgImage_01">
+
+        <div class="row">
+
+            <div class="col s0 m1"> <a href="index.html"> <img src="Assets/BackArrow.png" , class="img_arrow"> </a> </div>
+            <div class="col s9 m10"> <h1 class="title_02"> Dashing Exploration </h1> </div>
+
+        </div>
+
+        <div class="container">
+            <div class="card-panel body_limegreen z-depth-3">
+                <h1 class="title_02"> Présentation du projet </h1>
+                <p class="Par_01">
+                    Dashing Exploration est un jeu en 2D sideview composé d'un hub et de dix niveaux avec chacun un objectif dans un monde infiniment grand former de carrés, <br>
+                    le joueur doit explorer ce monde en combinant ses capacités de déplacements et en interagissant avec son environnement pour compléter les objectifs.
+                </p>
+
+                <h1 class="title_02"> Images/Gifs du projet finale : </h1>
+
+                <div class="row">
+                    <div class="col s4 m4">
+                        <img src="Assets/DE_01.gif" , class="img_04">
+                    </div>
+
+                    <div class="col s4 m4">
+                        <img src="Assets/DE_Hub_01.png" , class="img_04">
+                    </div>
+
+                    <div class="col s4 m4">
+                        <img src="Assets/DE_05.gif" , class="img_04">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="card-panel body_blue z-depth-3">
+                <h1 class="black-text text-darken-1 title_02"> Projet </h1>
+
+                <h3 class="black-text text-darken-1 title_side"> 1) GameDesign : </h3>
+                <h3 class="black-text text-darken-1 title_side2"> Concepte de base : </h3>
+
+                <p class="black-text text-darken-1">
+                    Le jeu se joue en format paysage, le personnage ce contrôle avec un joystick sur la gauche et des boutons correspondant à des capacités sur la droite. <br>
+                    Le joueur possède des capacités pour changer son environnement (Miner, Bomb) et des capacités de déplacements (double Jump, wall Jump, Dash). <br>
+                    Il est impossible de mourir mais on peut par exemple faire une grande chute qui peut faire perdre beaucoup de progression. <br>
+                    <br>
+                    J'ai limité les possibilités de mouvements afin de demander plus de réflexion (qu'elle est la bonne combinaison de mouvement pour atteindre une certaine zone?) et/ou
+                    d'exploration (trouver un passage plus simple) au joueur mais le level design repose sur de la génération procédurale,
+                    la difficulté était donc compliquée à régler c'est pourquoi j'ai ajouter le system de bonus.
+
+                    <img src="Assets/DE_Dash_02.gif" , class="img_11 Mauto">
+                </p>
+
+                <h3 class="black-text text-darken-1 title_side2"> Système de Bonus et Shrine : </h3>
+
+                <div class="row">
+
+                    <div class="col s6">
+                        <p class="black-text text-darken-1">
+                            Les bonus s'obtiennent en détruisant des blocs dans des biomes spécifiques, ils sont actuellement le seul vrai intérêt autre que visuel du system de biome. <br>
+                            <br>
+                            Il y a trois biomes (rouge, vert, bleu) pour trois bonus, ils rendent la progression du joueur dans le niveau plus simple et ils sont remis à 0 au début de chaque niveaux. <br>
+                            Ce system permet de s'assurer qu'un joueur ne restera pas bloqué dans un niveau. <br>
+                            <br>
+                            Les bonus permettent aussi de rendre le gameplay moins lisse et de créer sentiment de progression dans chaque niveau. <br>
+                            Les seuls désavantage des bonus sont le fait qu'il faut détruire des blocs pour les obtenir (et donc rendre le terrain plus compliqué) et le temps pour casser des blocs.
+                        </p>
+                    </div>
+
+                    <div class="col s0">
+                        <img src="Assets/DE_Bonus.gif" , class="img_10">
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col s6">
+                        <p class="black-text text-darken-1">
+                            Le system de shrine est très similaire au system de bonus et avec presque les mêmes objectifs de gameDesign mais en plus puissant et avec une durée. <br>
+                            <br>
+                            Ils apparaissent de manière aléatoire.
+                        </p>
+                    </div>
+
+                    <div class="col s0">
+                        <img src="Assets/DE_Shrine.png" , class="img_12 Mauto">
+                    </div>
+
+                </div>
+
+                <h3 class="black-text text-darken-1 title_side2"> Courbe de difficulté : </h3>
+
+                <p class="black-text text-darken-1">
+                    Le jeu possède un tutoriel, dix niveaux qui augmente en difficulté et un mode infinis ou la difficulté augmente à l'infini. <br>
+                    La difficulté augmente de plusieurs manières dans les niveaux : <br>
+                    -les objectifs deviennent plus durs à remplir <br>
+                    -Les blocs deviennent plus résistants <br>
+                    -La taille des niveaux augmente <br>
+                    <br>
+                    L'augmentation de la difficulté rend les niveaux plus longs à compléter et peut demander des mouvements plus durs à exécuter.
+
+                    <img src="Assets/DE_04.png" , class="img_11 Margin10">
+                </p>
+
+                <h3 class="black-text text-darken-1 title_side2"> Hub : </h3>
+
+                <p class="black-text text-darken-1">
+                    Permet d'avoir un level design fix (apprendre des mouvements), un point de repère dans des mondes infinis, <br>
+                    de ralentir le rythme entre les niveaux et de faire en sorte que la sélection des niveaux se fasse avec le gameplay.
+
+                    <img src="Assets/DE_Hub_02.png" , class="img_11 Margin10">
+                </p>
+
+                <br>
+                <br>
+
+                <h3 class="black-text text-darken-1 title_side"> 2) Technique : </h3>
+
+                <h3 class="black-text text-darken-1 title_side2"> Générale : </h3>
+
+                <p class="black-text text-darken-1">
+                    Mon premier projet sur portable j'ai rencontré plusieurs problèmes d'optimisation qui ont tous été règlés
+                    sauf les vidéos dans le tutoriel qui augmente trop le poids du projet principalement. <br>
+                    J'ai utiliser UnityRemote pour tester le projet. <br>
+                    <br>
+                    Le projet comportait d'autres défis techniques, en voici certains :
+                </p>
+
+                <h3 class="black-text text-darken-1 title_side2"> Noise : </h3>
+
+                <p class="black-text text-darken-1">
+                    Le plus grand défi technique du projet, j'utilise du noise pour la génération du terrain et du background. <br>
+                    L'utilisation de génération procédurale était importante pour le projet pour rendre le gameplay moins lisse et la rejouabilité et l'utilisation de techArt était ma meilleure solution pour les visuels du jeu.
+                </p>
+
+                <div class="row">
+
+                    <div class="col s6">
+                        <img src="Assets/DE_02.gif" , class="img_12 Mauto">
+                    </div>
+
+                    <div class="col s0">
+                        <img src="Assets/DE_06.gif" , class="img_12 Mauto">
+                    </div>
+
+                </div>
+
+                <p class="black-text text-darken-1">
+                    Ici c'est une version dézoomer du jeu et je déplace le joueur dans Unity, on peut voir le terrain se générer/supprimer. <br>
+                    Le terrain et le background sont générés uniquement autour du joueur pour l'optimisation et avec un system qui recréer les modifications sur le terrain faites par le joueur. <br>
+                    Le background est créé avec deux plans avec un effet de parallax c'est pourquoi il faut générer plus de background.
+                </p>
+
+                <div class="card-panel body_limegreen z-depth-3">
+
+                    <h3 class="black-text text-darken-1 title_side2"> Ads et Boutique : </h3>
+
+                    <p class="black-text text-darken-1">
+                        J'ai configurer et utiliser <a href="https://docs.unity.com/monetization-dashboard/en-us/manual/AdTypes" , class="underline"> Unity ads </a> pour des bannière et "Interstitial ads", je n'ais garder que les bannière dans le projet. <br>
+                        Le projet possède aussi une boutique qui permet d'acheter et de sélectionner une apparence pour le personnage qui fonctionne avec Unity IAP.
+                    </p>
+
+                    <div class="row">
+
+                        <div class="col s6">
+                            <img src="Assets/DE_Banner.png" , class="img_12 Mauto">
+                        </div>
+
+                        <div class="col s0">
+                            <img src="Assets/DE_Shop.png" , class="img_12 Mauto">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="card-panel body_red z-depth-3">
+
+                    <h3 class="black-text text-darken-1 title_side2"> GooglePlay : </h3>
+
+                    <p class="black-text text-darken-1">
+                        J'ai pu créer un compte <a href="https://learn.buildfire.com/en/articles/483096-how-to-create-a-google-play-developer-account" , class="underline"> googlePlay développeur </a>
+                        et apprendre à utiliser la <a href="https://play.google.com/console/about/" , class="underline"> googlePlayConsole </a> qui m’a permis de bien configurer le projet pour le publier notamment par rapport à la monétisation. <br>
+                        Le jeu a été publier de manière publique sur le PlayStore après plusieurs versions(release) de test.  <br>
+                        <br>
+                        Voici la <a href="https://play.google.com/store/apps/details?id=com.DefaultCompany.DashingExploration" , class="underline"> page googlePlay </a> du jeu :
+
+                        <img src="Assets/DE_GooglePlayPage.png" , class="img_10">
+                    </p>
+
+                </div>
+
+                <h3 class="black-text text-darken-1 title_side2"> Aspet technique spécifique : MultiState </h3>
+
+                <div class="row">
+
+                    <div class="col s0">
+                        <img src="Assets/DE_MultiState.png" , class="img_13">
+                    </div>
+
+                    <div class="col s6">
+                        <p class="black-text text-darken-1">
+                            Le multistate est une évolution d'un State pour en avoir plusieurs en un ce qui permet d'avoir plus de contrôles sur une stateMachine. <br>
+                            J'aurais aussi pu utiliser plusieurs stateMachines. <br>
+                            <br>
+                            J'utilise un dictionnaire de state avec un variable string en clef pour pouvoir retrouver un state spécifique.
+                        </p>
+                    </div>
+
+                </div>
+
+                <h3 class="black-text text-darken-1 title_side2"> Exemple d'utilisation : Mouvement du personnage et Dash </h3>
+
+                <p class="black-text text-darken-1">
+                    Chaque capacité de mouvement du personnage est séparée des autres graces à ce système ce qui permet d'avoir plus de contrôles : <br>
+                    <br>
+                    <img src="Assets/DE_Movements.png" , class="img_14">
+                    <br>
+                    J'ai utilisé ce system pour faire la capacité de dash du personnage qui désactive d'abord la capacité de "ControlFall" du personnage durant la phase de zoom :
+                    <img src="Assets/DE_Dash_01.png" , class="img_15">
+                    le personnage peut encore se tourner, puis tous les mouvements sont désactiver durant le dash et sont ensuite rétablis à la fin :
+                    <img src="Assets/DE_Dash_02.png" , class="img_16">
+
+                    <div class="row">
+
+                        <div class="col s6">
+                            Voici un dash complet :
+                        </div>
+
+                        <div class="col s0">
+                            et la capacité "controllFall" qui est incompatible avec la phase du zoom du dash :
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col s6">
+                            <img src="Assets/DE_Dash.gif" , class="img_11">
+                        </div>
+
+                        <div class="col s0">
+                            <img src="Assets/DE_CF.gif" , class="img_11">
+                        </div>
+
+                    </div>
+                </p>
+
+                <h3 class="black-text text-darken-1 title_side"> 3) Aller plus loin : </h3>
+
+                <p class="black-text text-darken-1">
+                    -Gameplay et Courbe de difficulté : <br>
+                    Je pense qu'il y a actuellement deux problèmes principaux le plus important est le manque de capacités de mobilités du personnage, <br>
+                    même si le "wall Jump", le "double Jump" et le dash offrent déjà une certaine complexité le gameplay est trop limité. <br>
+                    <br>
+                    L'autre est l'augmentation de la difficulté/courbe de difficulté qui est trop basé sur l'augmentation du temps pour chaque niveau <br>
+                    et pas assez sur celle de la complexité d'exécution des mouvements. <br>
+                    Ces deux problèmes pourraient être réglés avec l'ajout de nouvelles capacités de mouvements déblocables après certains niveaux, <br>
+                    par exemple pouvoir utiliser des bombes pour se projeter. <br>
+                    <br>
+                    Ajouter une progression permanente entre chaque niveaux (exemple : augmentation des dégâts de la bombe) qui pourraient rattraper l'augmentation de la difficulté des niveaux pourrait aussi apporter une fausse progression. <br>
+                    <br>
+                    -Boutique :
+                    La boutique actuelle est plus une version de test, un vrai boutique aiderait à monétiser le jeu.
+                </p>
+
+                <h3 class="black-text text-darken-1, title_side"> 4) Post mortem : </h3>
+                <p class="black-text text-darken-1">
+                    Le tutoriel est ce qui fonctionnait le moins dans le projet. <br>
+                    lorsque je l'ait fait tester à des gens extérieurs au projet, le tutoriel n'était pas assez claire sur ce que j'essayais d'apprendre aux joueurs malgré les vidéos. <br>
+                    Si je devais refaire le system de pub je n'utiliserais pas Unity Ads mais plutôt google ad manager. <br>
+                    Même si le projet fonctionne bien sur portable je pense qu'un gameplay plus passif aurait plus de potentiel.
+                </p>
+
+            </div>
+        </div>
+
+        <h2 class="title_03 text-darken-1"> Page Google play : </h2>
+        <a href="https://play.google.com/store/apps/details?id=com.DefaultCompany.DashingExploration&hl=fr"> <img src="Assets/google-play-badge.png" , class="center"> </a>
+
+    </div>
+</body>
+</html>
