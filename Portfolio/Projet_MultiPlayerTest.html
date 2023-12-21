@@ -1,84 +1,89 @@
 <html>
-    <head>
-      <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-      <link rel="stylesheet" href="style.css">
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
 
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    </head>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
 
-    <body>
-        <div class="row">
+<body>
+    <!--#region Arrow + Title -->
+    <div class="pos_fix img_arrow">
+        <a href="index.html"> <img src="Assets/BackArrow.png" style="width:50px; height:50px;"> </a>
+    </div>
 
-          <div class="col s0 m1"> <a href="index.html"> <img src="Assets/BackArrow.png", class = "img_arrow"> </a> </div>
-          <div class="col s9 m10"> <h1 class = "title_02"> MultiPlayerDemo </h1> </div>
-
+    <div class="row">
+        <div class="col s12 m12">
+            <h1 class="title_02"> MultiPlayer Demo </h1>
         </div>
+    </div>
+    <!--#endregion -->
 
-        <div class="container"> 
-          <div class="card-panel grey lighten-2, z-depth-3">
-            <h1 class = "black-text text-darken-1, title_02"> Présentation du projet </h1>
-            <p class = "black-text text-darken-1, Par_01">
+    <div class="container">
+        <div class="card-panel grey lighten-2, z-depth-3">
+            <h1 class="black-text text-darken-1, title_02"> Présentation du projet </h1>
+            <p class="black-text text-darken-1, Par_01">
 
             <p class="black-text text-darken-1, Par_01">
-             Un projet de test en multijoueur en utilisant Photon avec Unity
+                Un projet de test en multijoueur en utilisant Photon avec Unity
             </p>
 
-            <h1 class = "black-text text-darken-1, title_02"> Images du projet : </h1>
+            <h1 class="black-text text-darken-1, title_02"> Images du projet : </h1>
 
-            <img src="Assets/MPT_Lobby.png", class = "img_06">
+            <img src="Assets/MPT_Lobby.png" , class="img_06">
 
-          </div>
         </div>
+    </div>
 
-        <div class="container"> 
-          <div class="card-panel grey lighten-2, z-depth-3">
-            <h1 class = "black-text text-darken-1, title_02"> Projet </h1>
-            <h3 class = "black-text text-darken-1, title_side"> Toutes les fonctionnalitée : </h3>
-            Chaques utiisateur peut créer ou rejoindre une "room" (jusqu'à 3 joueurs par room), 
-            le joueur qui "possède" la room peut lancer la partie, 
+    <div class="container">
+        <div class="card-panel grey lighten-2, z-depth-3">
+            <h1 class="black-text text-darken-1, title_02"> Projet </h1>
+            <h3 class="black-text text-darken-1, title_side"> Toutes les fonctionnalitée : </h3>
+            Chaques utiisateur peut créer ou rejoindre une "room" (jusqu'à 3 joueurs par room),
+            le joueur qui "possède" la room peut lancer la partie,
             chaques joueurs charge la même scène et ont accès à un chat écrit.
             <p class="black-text text-darken-1">
-              
+
             </p>
 
-            <h3 class = "black-text text-darken-1, title_side"> Technique : </h3>
+            <h3 class="black-text text-darken-1, title_side"> Technique : </h3>
             Ce projet utiise la version gratuite de photon avec Unity, il sagit de multijoueur en ligne,
             chaques actions d'un joueur sont retransmis aux version local des autres joueurs.
-            <h3 class = "black-text text-darken-1, title_side"> Code : </h3>
+            <h3 class="black-text text-darken-1, title_side"> Code : </h3>
 
-            <p class="black-text text-darken-1"> 
-              Ici une fonction de Photon "OnJoinedRoom" qui est appeller lorsque le joueur rejoin une "room" :
-              <img src="Assets/MPT_OnJoinRoom.png", class = "img_10">
+            <p class="black-text text-darken-1">
+                Ici une fonction de Photon "OnJoinedRoom" qui est appeller lorsque le joueur rejoin une "room" :
+                <img src="Assets/MPT_OnJoinRoom.png" , class="img_10">
             </p>
 
-            <h3 class = "black-text text-darken-1, title_side"> Gif du projet : </h3>
+            <h3 class="black-text text-darken-1, title_side"> Gif du projet : </h3>
 
             <div class="row">
-            <div class="col s6 m6">
-              <img src="Assets/MPT_Room.gif", class = "img_09">
+                <div class="col s6 m6">
+                    <img src="Assets/MPT_Room.gif" , class="img_09">
+                </div>
+
+                <div class="col s6 m6">
+                    <img src="Assets/MPT_Play.gif" , class="img_09">
+                </div>
+
             </div>
 
-            <div class="col s6 m6">
-              <img src="Assets/MPT_Play.gif", class = "img_09">
-            </div>
-
-            </div>
-
-            <h3 class = "black-text text-darken-1, title_side"> Post mortem : </h3>
-            <p class="black-text text-darken-1"> 
-              J'ai pu apprendre à utiliser Photon et à ajouter du multijoueur simple dans un projet,
-               ce projet ma aussi permis de me sensibilisé sur le développement de jeux en multijoueur online.
+            <h3 class="black-text text-darken-1, title_side"> Post mortem : </h3>
+            <p class="black-text text-darken-1">
+                J'ai pu apprendre à utiliser Photon et à ajouter du multijoueur simple dans un projet,
+                ce projet ma aussi permis de me sensibilisé sur le développement de jeux en multijoueur online.
             </p>
 
-          </div>
         </div>
+    </div>
 
-        <h2 class = "title_03"> Page Itch.io du projet </h2>
-        <a href="https://yoan-lechevalier.itch.io/multiplayerdemo"> <img src="https://static.itch.io/images/app-icon.png", class = "img_100px"> </a> </div>
+    <h2 class="title_03"> Page Itch.io du projet </h2>
+    <a href="https://yoan-lechevalier.itch.io/multiplayerdemo"> <img src="https://static.itch.io/images/app-icon.png" , class="img_100px"> </a> </div>
 
-    </body>
+</body>
 </html>

@@ -6,6 +6,8 @@ body {
     background-color: #263238;
 }
 
+/*#region Titles*/
+
 .title_01 {
     font-size: 400%;
     text-align: center;
@@ -36,6 +38,13 @@ body {
     text-align: center;
 }
 
+/*#endregion*/
+
+.Par_01 {
+    font-size: 100%;
+    text-align: center;
+}
+
 /*#region Colors*/
 
 .body_white {
@@ -58,6 +67,10 @@ body {
     color: gray;
 }
 
+.color_black {
+    color: black;
+}
+
 .color_red {
     color: red;
 }
@@ -72,19 +85,49 @@ body {
 
 /*#endregion*/
 
-.Par_01 {
-    font-size: 100%;
-    text-align: center;
+/*#region Positions*/
+
+.pos_rel {
+    position: relative;
 }
+
+.pos_abs {
+    position: absolute;
+}
+
+.pos_fix {
+    position: fixed;
+}
+
+.pos_30px {
+    top: 30px;
+    left: 30px;
+}
+
+.pos_01 {
+    left: 15%;
+    top: 10%;
+}
+
+/*#endregion*/
+
+/*#region Margin*/
+
+.Margin10 {
+    margin-left: 10%;
+    margin-right: auto;
+}
+
+.margin_01{
+    margin-left: 5%;
+    margin-right: auto;
+}
+
+/*#endregion*/
 
 /*#region Images*/
 
-img {
-    width: 200px;
-}
-
-.portfolioimg {
-    width: 30%;
+[class*="img_"] {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -93,135 +136,101 @@ img {
 .img_02 {
     width: 70%;
     height: 10%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .img_03 {
     width: 80%;
     height: 40%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .img_04 {
     width: 80%;
     height: 20%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .img_05 {
     width: 180px;
     height: 325px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .img_06 {
     width: 70%;
     height: 60%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .img_07 {
     width: 100%;
     height: 5%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .img_08 {
     width: 50%;
     height: 5%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .img_09 {
     width: 400px;
     height: 300px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .img_10 {
     width: 492px;
     height: 242px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .img_11 {
     width: 541px;
     height: 266px;
-    display: block;
 }
 
 .img_12 {
     width: 442px;
     height: 217px;
-    display: block;
 }
 
 .img_13 {
     width: 500px;
     height: 455px;
-    display: block;
 }
 
 .img_14 {
     width: 1015px;
     height: 248px;
-    display: block;
 }
 
 .img_15 {
     width: 533px;
     height: 25px;
-    display: block;
 }
 
 .img_16 {
     width: 94px;
     height: 28px;
-    display: block;
 }
 
-.Mauto {
-    margin-left: auto;
-    margin-right: auto;
+.img_17 {
+    width: 95%;
+    height: 40vh;
 }
 
-.Margin10 {
-    margin-left: 10%;
-    margin-right: auto;
+.img_height_01 {
+    width: 100px;
+    height: 280px;
+}
+
+.img_width_01{
+    width: 200px;
+    height: 100px;
 }
 
 .img_100px {
     width: 100px;
     height: 100px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .img_arrow {
-    width: 35%;
+    width: 5%;
     height: 5%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .bgImage_01 {
@@ -234,8 +243,29 @@ img {
     position: relative;
 }
 
+.size_01 {
+    width: 90%;
+    height: 90%;
+}
+
 /*#endregion*/
+
+/*#region Backgrounds*/
+
+.bg_cardboard {
+    background: url(https://s3.envato.com/files/333246909/IMG_0379.jpg)
+}
+
+/*#endregion*/
+
+/*#region Misc*/
 
 .underline {
     text-decoration: underline;
 }
+
+.border_solid {
+    border : solid;
+}
+
+/*#endregion*/

@@ -1,99 +1,104 @@
 <html>
-    <head>
-      <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-      <link rel="stylesheet" href="style.css">
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
 
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    </head>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
 
-    <body>
-        <div class="row">
+<body>
+    <!--#region Arrow + Title -->
+    <div class="pos_fix img_arrow">
+        <a href="index.html"> <img src="Assets/BackArrow.png" style="width:50px; height:50px;"> </a>
+    </div>
 
-          <div class="col s0 m1"> <a href="index.html"> <img src="Assets/BackArrow.png", class = "img_arrow"> </a> </div>
-          <div class="col s9 m10"> <h1 class = "title_02"> Hack'n'Slash template </h1> </div>
-
+    <div class="row">
+        <div class="col s12 m12">
+            <h1 class="title_02"> Hack'n'Slash template </h1>
         </div>
+    </div>
+    <!--#endregion -->
 
-        <div class="container"> 
-          <div class="card-panel grey lighten-2, z-depth-3">
-            <h1 class = "black-text text-darken-1, title_02"> Présentation du projet </h1>
-            <p class = "black-text text-darken-1, Par_01">
+    <div class="container">
+        <div class="card-panel grey lighten-2, z-depth-3">
+            <h1 class="black-text text-darken-1, title_02"> Présentation du projet </h1>
+            <p class="black-text text-darken-1, Par_01">
 
             <p class="black-text text-darken-1, Par_01">
-              C'est un projet que j'ai réaliser seule qui a pour but de recréer les méchaniques d'un Hack'n'Slash, j'utilise beacoup de place holder, 
-              ce projet n'est pas terminer mais interressant principalement par rapport au code, le projet possède principalement un système de loot d'items, 
-              système de stats, d'inventaire et d'abre de talent.
+                C'est un projet que j'ai réaliser seule qui a pour but de recréer les méchaniques d'un Hack'n'Slash, j'utilise beacoup de place holder,
+                ce projet n'est pas terminer mais interressant principalement par rapport au code, le projet possède principalement un système de loot d'items,
+                système de stats, d'inventaire et d'abre de talent.
             </p>
 
-            <h1 class = "black-text text-darken-1, title_02"> Images du projet finale : </h1>
+            <h1 class="black-text text-darken-1, title_02"> Images du projet finale : </h1>
 
             <div class="row">
-              <div class="col s4 m4">
-                <img src="Assets/Equiped Items Screen.png", class = "img_04">
-              </div>
+                <div class="col s4 m4">
+                    <img src="Assets/Equiped Items Screen.png" , class="img_04">
+                </div>
 
-              <div class="col s4 m4">
-                <img src="Assets/Hack'N'Slahs_SkillTree2.gif", class = "img_04">
-              </div>
+                <div class="col s4 m4">
+                    <img src="Assets/Hack'N'Slahs_SkillTree2.gif" , class="img_04">
+                </div>
 
-              <div class="col s4 m4">
-                <img src="Assets/Hack'N'Slahs_Inventory.gif", class = "img_04">
-              </div>
+                <div class="col s4 m4">
+                    <img src="Assets/Hack'N'Slahs_Inventory.gif" , class="img_04">
+                </div>
             </div>
 
-          </div>
         </div>
+    </div>
 
-        <div class="container"> 
-          <div class="card-panel grey lighten-2, z-depth-3">
-            <h1 class = "black-text text-darken-1, title_02"> Projet </h1>
-            <h3 class = "black-text text-darken-1, title_side"> Toutes les fonctionnalitée : </h3>
+    <div class="container">
+        <div class="card-panel grey lighten-2, z-depth-3">
+            <h1 class="black-text text-darken-1, title_02"> Projet </h1>
+            <h3 class="black-text text-darken-1, title_side"> Toutes les fonctionnalitée : </h3>
             <p class="black-text text-darken-1">
-              Le projet possède également un système de combat simple et un système d'experience et de niveau qui permet d'obtenir des points de talents pour l'abre de talent, 
-              des élements d'UI et de la gestion d'ui(ex: empécher certaines actions si la souris est sur un élement de l'ui).j'ai aussi réaliser ma première miniMap dans ce projet
+                Le projet possède également un système de combat simple et un système d'experience et de niveau qui permet d'obtenir des points de talents pour l'abre de talent,
+                des élements d'UI et de la gestion d'ui(ex: empécher certaines actions si la souris est sur un élement de l'ui).j'ai aussi réaliser ma première miniMap dans ce projet
             </p>
 
-            <h3 class = "black-text text-darken-1, title_side"> Technique : </h3>
-            <p class="black-text text-darken-1"> 
-              système de stats : 
-            </p>
-
+            <h3 class="black-text text-darken-1, title_side"> Technique : </h3>
             <p class="black-text text-darken-1">
-              l'orsque l'ont s'équipe d'un item ou que l'ont prend un point dans l'arbre de talent l'inventaire ou l'abre de talent va d'habord récuperer ces stats puis 
-              lancer une fontion d'update de stats du joueur pour recalculer toutes les stats du joueur.
-            </p>
-
-            <p class="black-text text-darken-1"> 
-              système d'items : 
+                système de stats :
             </p>
 
             <p class="black-text text-darken-1">
-              Chaque items peut être de trois qualité(normale, magique, rare), les items magique peuvent avoir trois modificateur et les rare 6
-              qui peuvent augmenter les stats que l'item va donner au joueur ou ajouter des effets unique, ces modificateurs sont visible dans l'affichage de l'item.
-              l'orsque l'ont drop un item il peut être normale, magique ou rare avec des modificateurs aléatoire, certains type d'items ne peuvent avoir que certain
-              type de modificateur.
+                l'orsque l'ont s'équipe d'un item ou que l'ont prend un point dans l'arbre de talent l'inventaire ou l'abre de talent va d'habord récuperer ces stats puis
+                lancer une fontion d'update de stats du joueur pour recalculer toutes les stats du joueur.
             </p>
 
-            <h3 class = "black-text text-darken-1, title_side"> Code : </h3>
-
-            <p class="black-text text-darken-1"> 
-              Code
+            <p class="black-text text-darken-1">
+                système d'items :
             </p>
 
-            <h3 class = "black-text text-darken-1, title_side"> Post mortem : </h3>
-            <p class="black-text text-darken-1"> 
-              Ce projet ma permit de beacoup apprendre sur la gestion de l'ui et beaucoup d'autres détails.
+            <p class="black-text text-darken-1">
+                Chaque items peut être de trois qualité(normale, magique, rare), les items magique peuvent avoir trois modificateur et les rare 6
+                qui peuvent augmenter les stats que l'item va donner au joueur ou ajouter des effets unique, ces modificateurs sont visible dans l'affichage de l'item.
+                l'orsque l'ont drop un item il peut être normale, magique ou rare avec des modificateurs aléatoire, certains type d'items ne peuvent avoir que certain
+                type de modificateur.
             </p>
 
-          </div>
+            <!--<h3 class="black-text text-darken-1, title_side"> Code : </h3>
+
+              <p class="black-text text-darken-1">
+                Code
+            </p>-->
+
+            <h3 class="black-text text-darken-1, title_side"> Post mortem : </h3>
+            <p class="black-text text-darken-1">
+                Ce projet ma permit de beacoup apprendre sur la gestion de l'ui et beaucoup d'autres détails.
+            </p>
+
         </div>
+    </div>
 
-        <h2 class = "title_03"> Page Itch.io du projet </h2>
-        <a href="https://yoan-lechevalier.itch.io/hacknslash-template"> <img src="https://static.itch.io/images/app-icon.png", class = "img_100px"> </a> </div>
+    <h2 class="title_03"> Page Itch.io du projet </h2>
+    <a href="https://yoan-lechevalier.itch.io/hacknslash-template"> <img src="https://static.itch.io/images/app-icon.png" , class="img_100px"> </a> </div>
 
-    </body>
+</body>
 </html>
