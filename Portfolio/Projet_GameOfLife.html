@@ -1,5 +1,7 @@
 <html>
 <head>
+    <meta charset="utf-8" />
+    <title>Game Of Life Project</title>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
@@ -13,142 +15,109 @@
 <body class="body_white">
     <!--#region Arrow + Title -->
     <div class="pos_fix img_arrow">
-        <a href="index.html"> <img src="Assets/BackArrow.png" style="width:50px; height:50px;"> </a>
+        <a href="index.html"><img src="Assets/BackArrow.png" class="wh_02"></a>
     </div>
 
-    <div class="row">
-        <div class="col s12 m12">
-            <h1 class="title_02"> The Game Of Life </h1>
-        </div>
-    </div>
+    <h1 class="title_02 center margin_04 padding_02">The Game Of Life</h1>
     <!--#endregion -->
 
     <div class="container">
         <div class="card-panel black lighten-2, z-depth-3">
-            <h1 class="white-text text-darken-1, title_02"> Présentation du projet </h1>
-            <p class="white-text text-darken-1, Par_01">
-                <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life#Examples_of_patterns" , class="underline"> si vous ne connaisez pas le jeu de la vie</a>, j'ai utiliser
-                <a href="https://conwaylife.com/wiki/Main_Page" , class="underline"> ce site </a> pour trouver tous les patterns
-
-            <p class="white-text text-darken-1, Par_01">
-                J'ai découvert le jeu de la vie il y'a quelque années grâce à <a href="https://www.youtube.com/watch?v=S-W0NX97DB0" , class="underline">cette vidéo</a> de science étonnante
-            </p>
-
-            <p class="white-text text-darken-1, Par_01">
-                C'est un projet que j'a réaliser seule et ce n'était pas un travail d'école, c'était un projet asser spéciale car il est plus éloigner du jeu vidéo que mes
-                autres projets. Le projet permet principalement de jouer au jeu de la vie sur une grille qu'ont peut définir,
-                il permet aussi de randomiser la grille pour avoir rapidement des choses interressantes, placer des patterns que l'ont choisie ou des une cellule,
-                tous les patterns palcable sont aussi tournable dans 4 directions(c'est une fonctionnalité que je n'ais pas trouver sur d'autre jeu de la vie).
+            <h1 class="title_02 center white-text">Présentation du projet</h1>
+            <p class="center white-text">
+                <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life#Examples_of_patterns" class="underline">si vous ne connaisez pas le jeu de la vie</a>, j'ai utiliser
+                <a href="https://conwaylife.com/wiki/Main_Page" class="underline"> ce site </a> pour trouver tous les patterns<br>
+                <br>
+                J'ai découvert le jeu de la vie il y'a quelque années grâce à <a href="https://www.youtube.com/watch?v=S-W0NX97DB0" class="underline">cette vidéo</a> de science étonnante<br>
+                <br>
+                C'est un projet personnel, c'était un projet asser spéciale car il est plus éloigner du jeu vidéo que mes autres projets.<br>
+                Le projet permet principalement de jouer au jeu de la vie sur une grille qu'ont peut définir en taille,<br>
+                <br>
+                il permet aussi de <strong>randomiser</strong> la grille pour avoir rapidement des choses interressantes, placer des patterns que l'ont choisie ou une cellule,<br>
+                tous les patterns peuvent aussi être <strong>tourner</strong> dans 4 directions.<br>
                 Vous pouvez tester le projet sur la page itch.io du projet accessible en bas de cette page.
             </p>
 
-            <h1 class="white-text text-darken-1, title_02"> Gif du projet finale : </h1>
-
+            <h1 class="title_02 center white-text">Gif du projet finale :</h1>
             <div class="row">
                 <div class="col s4 m4">
-                    <img src="Assets/GOL_Tutrtles.gif" , class="img_04">
+                    <img src="Assets/GOL_Tutrtles.gif" class="img_04">
                 </div>
 
                 <div class="col s4 m4">
-                    <img src="Assets/GOL_Pulsar.gif" , class="img_04">
+                    <img src="Assets/GOL_Pulsar.gif" class="img_04">
                 </div>
 
                 <div class="col s4 m4">
-                    <img src="Assets/GOL_Ghost_Turtles.gif" , class="img_04">
+                    <img src="Assets/GOL_Ghost_Turtles.gif" class="img_04">
                 </div>
             </div>
-
         </div>
     </div>
 
     <div class="container">
         <div class="card-panel black lighten-2, z-depth-3">
-            <h1 class="white-text text-darken-1, title_02"> Projet </h1>
-            <h3 class="white-text text-darken-1, title_side"> Toutes les fonctionnalitée : </h3>
+            <h1 class="title_02 center white-text">Projet</h1>
+            <h3 class="title_02 white-text underline">Toutes les fonctionnalitée :</h3>
             <p class="white-text text-darken-1">
-                A part les fonctionnalitée principale le projet possède d'autres fonctinnalitée :
-            <p class="white-text text-darken-1"> fondamentales : click droit pour se déplacer sur la grille, roullette de la souris pour zoomer </p>
-            <p class="white-text text-darken-1"> Le projet permet aussi de jouer le jeu en automatique ou manuel et de définir le temps entre chaque tours. </p>
-            <p class="white-text text-darken-1"> Afficher/cacher la grille. Désactiver l'affichage des tiles blanches qui remplisse le tableau. </p>
-            <p class="white-text text-darken-1"> Le projet possède aussi un système de menu pour accèder à chaque fonctionnalitée et ranger les patterns dans leur groupe. </p>
+                A part les fonctionnalitée principale le projet possède d'autres fonctinnalitée :<br>
+                - click droit pour se déplacer sur la grille, roullette de la souris pour zoomer.<br>
+                - Le projet permet aussi de jouer le jeu en automatique ou manuel et de définir le temps entre chaque tours.<br>
+                - Afficher/cacher la grille. Désactiver l'affichage des tiles blanches qui remplisse le tableau.<br>
+                Le projet possède aussi un système de menu pour accèder à chaque fonctionnalitée et ranger les patterns dans leur groupe.<br>
             </p>
 
-            <h3 class="white-text text-darken-1, title_side"> Technique : </h3>
+            <h3 class="title_02 white-text underline">Technique :</h3>
             <p class="white-text text-darken-1">
                 Le projet est fait sur Unity, j'ai d'habord créer un script isolé qui simule uniquement le jeu de la vie sur un tableau à double entrée de bolean,
                 le jeu est ensuite affiché en utilisant les tilemap de unity
             </p>
 
-            <p class="white-text text-darken-1">
-                Optimisation :
-            </p>
-
-            <p class="white-text text-darken-1">
-                Le projet a eu besoin d'optimisation à un certain point, l'optimisation c'est faite avec la manière d'affiché le jeu,
-                j'ai donc utiliser différentes techniques : uniquement mettre les tiles sur la tilemap si elles ont besoin d'être changer
-                (avant de mettre une tile sur un emplacement ont regarde la "nature" de la tile à cette emplacement, ont aurait aussi pu enregistré le tableau avant le tour et le comparé
-                à celui après pour savoir quelle tile aurait besoin d'être changer(solution non tester)).
-            </p>
-
-            <p class="white-text text-darken-1">
+            <h3 class="title_02 white-text underline">Optimisation :</h3>
+            <p class="white-text">
+                Le projet a eu besoin d'optimisation à un certain point, elle c'est faite avec la manière d'affiché le jeu,<br>
+                j'ai donc utiliser différentes techniques : uniquement mettre les tiles sur la tilemap si elles ont besoin d'être changer<br>
+                (avant de mettre une tile sur un emplacement ont regarde la "nature" de la tile à cette emplacement, ont aurait aussi pu enregistré le tableau avant le tour et le comparé<br>
+                à celui après pour savoir quelle tile aurait besoin d'être changer(solution non tester)).<br>
+                <br>
                 La plus grosse optimisation à été d'afficher uniquement une certaine partie du tableau(elle est affiché toujours au même endroit déplacer la grille est enfaite déplacer
                 la partie affiché).
+            </p>       
+
+            <h3 class="title_02 white-text underline">Code :</h3>
+            <p class="white-text">
+                Je stoque les patterns en tant que class qui contienent une list de Vector2Int qui représente toutes les cellule du pattern<br>
+                (la position 00 sera l'emplacement de la souris), la taille x et y du pattern (qui permet de tourner les patterns).<br>
+                La list de Vector2Int de certain pattern peut être très longue j'ai donc essayer de la rendre lisible même pour des pattern asser gros comme la tortue :<br>
             </p>
+            <img src="Assets/Code Turtle.PNG" class="img_03">
 
-            <h3 class="white-text text-darken-1, title_side"> Code : </h3>
+            <p class="white-text">Voici la fonction qui permet de tourner les patterns sur quatres directions :</p>
+            <img src="Assets/GOL_Code_02.PNG" class="img_06">
 
-            <p class="white-text text-darken-1">
-                Je stoque les pattern en tant que class qui contienent une list de Vector2Int qui représente toutes les cellule du pattern
-                (la position 00 sera l'emplacement de la souris), une position maximal qui est le x et le y max que le pattern atteind
-                (qui sert à ne pas pouvoir placer un pattern en dehord des limite de la grille et pour pouvoir tourner les patterns).
-                La list de Vector2Int de certain pattern peut être très longue j'ai donc essayer de la rendre lissible même pour des pattern asser gros comme la tortue :
-            </p>
+            <p class="white-text">Voici la fonction qui permet d'afficher la grille :</p>
+            <img src="Assets/GOL_Code_03_Display.PNG" class="img_06">
 
-            <img src="Assets/Code Turtle.PNG" , class="img_03">
+            <p class="white-text">Elle est appeler avec ces paramètres:</p>
+            <img src="Assets/GOL_Code_04_DisplayFunc.PNG" class="img_02">
 
-            <p class="white-text text-darken-1">
-                Voici la fonction qui permet de tourner les patterns sur quatres directions:
-            </p>
+            <p class="white-text">Utilisation des lambda expression dans le projet :</p>
+            <img src="Assets/GOL_Code_05_CreateShape.PNG" class="img_03">
+            <br>
+            <img src="Assets/GOL_Code_07_Action.PNG" class="img_08">
 
-            <img src="Assets/GOL_Code_02.PNG" , class="img_06">
+            <p class="white-text">cette ligne permet de définire le pattern qui sera créer avec le click de la souris :</p>
+            <img src="Assets/GOL_Code_06_Lambda.PNG" class="img_07">
 
-            <p class="white-text text-darken-1">
-                Voici la fonction qui permet d'afficher la grille:
-            </p>
+            <h3 class="title_02 white-text underline">Gif d'avancé du projet :</h3>
+            <img src="Assets/GosperGliderGun.gif" class="portfolioimg">
 
-            <img src="Assets/GOL_Code_03_Display.PNG" , class="img_06">
-
-            <p class="white-text text-darken-1">
-                Elle est appeler avec ces paramètres:
-            </p>
-
-            <img src="Assets/GOL_Code_04_DisplayFunc.PNG" , class="img_02">
-
-            <p class="white-text text-darken-1">
-                Utilisation des lambda expression dans le projet:
-            </p>
-
-            <img src="Assets/GOL_Code_05_CreateShape.PNG" , class="img_03">
-            <div>.</div>
-            <img src="Assets/GOL_Code_07_Action.PNG" , class="img_08">
-            <p class="white-text text-darken-1">
-                cette ligne permet de définire le pattern qui sera créer avec le click de la souris:
-            </p>
-            <img src="Assets/GOL_Code_06_Lambda.PNG" , class="img_07">
-
-            <h3 class="white-text text-darken-1, title_side"> Gif d'avancé du projet : </h3>
-            <img src="Assets/GosperGliderGun.gif" , class="portfolioimg">
-
-            <h3 class="white-text text-darken-1, title_side"> Post mortem : </h3>
-            <p class="white-text text-darken-1">
-                Ce projet ma permit de partiquer et d'apprendre énormément sur l'utilisation des lambda expression que j'avais commencer à utiliser à la fin de mon dernier projet.
-            </p>
-
+            <h3 class="title_02 white-text underline">Post mortem :</h3>
+            <p class="white-text">Ce projet ma permit de partiquer et d'apprendre énormément sur l'utilisation des lambda expression que j'avais commencer à utiliser à la fin de mon dernier projet et qui m'ont énormément servis plus tard.</p>
         </div>
     </div>
 
-    <h2 class="title_03"> Page Itch.io du projet(tester le projet) </h2>
-    <a href="https://yoan-lechevalier.itch.io/game-of-life-in-unity"> <img src="https://static.itch.io/images/app-icon.png" , class="img_100px"> </a> </div>
-
+    <h2 class="title_03 center">Page Itch.io du projet(tester le projet)</h2>
+    <a href="https://yoan-lechevalier.itch.io/game-of-life-in-unity"><img src="https://static.itch.io/images/app-icon.png" class="img_100px"></a> 
 </body>
 </html>

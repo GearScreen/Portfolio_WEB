@@ -1,5 +1,7 @@
 <html>
 <head>
+    <meta charset="utf-8" />
+    <title>Hack'N'Slash Project</title>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
@@ -13,92 +15,81 @@
 <body>
     <!--#region Arrow + Title -->
     <div class="pos_fix img_arrow">
-        <a href="index.html"> <img src="Assets/BackArrow.png" style="width:50px; height:50px;"> </a>
+        <a href="index.html"><img src="Assets/BackArrow.png" class="wh_02"></a>
     </div>
 
-    <div class="row">
-        <div class="col s12 m12">
-            <h1 class="title_02"> Hack'n'Slash template </h1>
-        </div>
-    </div>
+    <h1 class="title_02 center margin_04 padding_02">Hack'n'Slash template</h1>
     <!--#endregion -->
 
+    <div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Red_Circle_full.png" class="pos_fix" style="width: 150px; height: 150px; bottom: 0; left: 7.5%">
+        <img src="https://www.publicdomainpictures.net/pictures/310000/nahled/blue-circle.png" class="pos_fix" style="width: 150px; height: 150px; bottom: 0; right: 7.5%;">
+    </div>
+
     <div class="container">
         <div class="card-panel grey lighten-2, z-depth-3">
-            <h1 class="black-text text-darken-1, title_02"> Présentation du projet </h1>
-            <p class="black-text text-darken-1, Par_01">
-
-            <p class="black-text text-darken-1, Par_01">
-                C'est un projet que j'ai réaliser seule qui a pour but de recréer les méchaniques d'un Hack'n'Slash, j'utilise beacoup de place holder,
-                ce projet n'est pas terminer mais interressant principalement par rapport au code, le projet possède principalement un système de loot d'items,
-                système de stats, d'inventaire et d'abre de talent.
+            <h1 class="title_02 center">Présentation du projet</h1>
+            <p class="center">
+                C'est un projet que j'ai réaliser seule qui a pour but de recréer les méchaniques d'un <strong>Hack'n'Slash</strong>, j'utilise beaucoup de place holder, <br>
+                ce projet n'est pas terminer mais interressant principalement par rapport au code, le projet possède principalement un système de loot d'items, système de stats, d'inventaire et d'abre de talent. <br>
             </p>
 
-            <h1 class="black-text text-darken-1, title_02"> Images du projet finale : </h1>
-
+            <h1 class="title_02 center">Images du projet finale :</h1>
             <div class="row">
                 <div class="col s4 m4">
-                    <img src="Assets/Equiped Items Screen.png" , class="img_04">
+                    <img src="Assets/Equiped Items Screen.png" class="img_04">
                 </div>
 
                 <div class="col s4 m4">
-                    <img src="Assets/Hack'N'Slahs_SkillTree2.gif" , class="img_04">
+                    <img src="Assets/Hack'N'Slahs_SkillTree2.gif" class="img_04">
                 </div>
 
                 <div class="col s4 m4">
-                    <img src="Assets/Hack'N'Slahs_Inventory.gif" , class="img_04">
+                    <img src="Assets/Hack'N'Slahs_Inventory.gif" class="img_04">
                 </div>
             </div>
-
         </div>
     </div>
 
     <div class="container">
         <div class="card-panel grey lighten-2, z-depth-3">
-            <h1 class="black-text text-darken-1, title_02"> Projet </h1>
-            <h3 class="black-text text-darken-1, title_side"> Toutes les fonctionnalitée : </h3>
-            <p class="black-text text-darken-1">
-                Le projet possède également un système de combat simple et un système d'experience et de niveau qui permet d'obtenir des points de talents pour l'abre de talent,
-                des élements d'UI et de la gestion d'ui(ex: empécher certaines actions si la souris est sur un élement de l'ui).j'ai aussi réaliser ma première miniMap dans ce projet
+            <h1 class="title_02 center">Projet</h1>
+            <h3 class="title_02 underline">Toutes les fonctionnalitées :</h3>
+            <p>
+                Le projet possède également un système de combat simple et un système d'experience et de niveau qui permet d'obtenir des points de talents pour l'<strong>abre de talent</strong>,<br>
+                des élements d'UI et de la gestion d'ui(ex: empécher certaines actions si la souris est sur un élement de l'ui).j'ai aussi réaliser ma première <strong>miniMap</strong> dans ce projet
             </p>
 
-            <h3 class="black-text text-darken-1, title_side"> Technique : </h3>
-            <p class="black-text text-darken-1">
-                système de stats :
+            <h3 class="title_02 underline">Technique :</h3>
+            <p class="underline">système de stats :</p>
+            <p>
+                Lorsque l'on s'équipe d'un item ou que l'on prend un point dans l'arbre de talents l'inventaire ou l'arbre de talents va d'habord récupérer ces stats et les recalculer puis<br>
+                lancer une fonction d'update de stats du joueur pour recalculer toutes les stats du joueur venant de l'inventaire et de l'arbre.
             </p>
 
-            <p class="black-text text-darken-1">
-                l'orsque l'ont s'équipe d'un item ou que l'ont prend un point dans l'arbre de talent l'inventaire ou l'abre de talent va d'habord récuperer ces stats puis
-                lancer une fontion d'update de stats du joueur pour recalculer toutes les stats du joueur.
-            </p>
-
-            <p class="black-text text-darken-1">
-                système d'items :
-            </p>
-
-            <p class="black-text text-darken-1">
-                Chaque items peut être de trois qualité(normale, magique, rare), les items magique peuvent avoir trois modificateur et les rare 6
-                qui peuvent augmenter les stats que l'item va donner au joueur ou ajouter des effets unique, ces modificateurs sont visible dans l'affichage de l'item.
+            <p class="underline">système d'items :</p>
+            <p>
+                Chaque items peut être de trois qualité(normale, magique, rare), les items magique peuvent avoir trois modificateur et les rare six<br>
+                qui peuvent augmenter les stats que l'item va donner au joueur ou ajouter des effets unique, ces modificateurs sont visible dans l'affichage de l'item.<br>
                 l'orsque l'ont drop un item il peut être normale, magique ou rare avec des modificateurs aléatoire, certains type d'items ne peuvent avoir que certain
                 type de modificateur.
             </p>
 
-            <!--<h3 class="black-text text-darken-1, title_side"> Code : </h3>
-
-              <p class="black-text text-darken-1">
+            <!--<h3 class="title_side">Code :</h3>
+              <p>
                 Code
-            </p>-->
+              </p>
+            -->
 
-            <h3 class="black-text text-darken-1, title_side"> Post mortem : </h3>
-            <p class="black-text text-darken-1">
-                Ce projet ma permit de beacoup apprendre sur la gestion de l'ui et beaucoup d'autres détails.
+            <h3 class="title_02 underline">Post mortem :</h3>
+            <p>
+                Ce projet ma permit de beaucoup apprendre sur la gestion de l'<strong>UI</strong> et beaucoup d'autres détails.<br>
+                J'ai aussi beaucoup appris sur le développement/la gestion de system de stats de personnages qui peut très vite devenir chaotique si mal gérer et qui ma servis dans d'autres projets.
             </p>
-
         </div>
     </div>
 
-    <h2 class="title_03"> Page Itch.io du projet </h2>
-    <a href="https://yoan-lechevalier.itch.io/hacknslash-template"> <img src="https://static.itch.io/images/app-icon.png" , class="img_100px"> </a> </div>
-
+    <h2 class="title_03 center">Page Itch.io du projet</h2>
+    <a href="https://yoan-lechevalier.itch.io/hacknslash-template"><img src="https://static.itch.io/images/app-icon.png" class="img_100px"></a>
 </body>
 </html>

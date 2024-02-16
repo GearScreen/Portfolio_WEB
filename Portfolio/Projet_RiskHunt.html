@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>RiskHunt Project</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a href="index.html"><img src="Assets/BackArrow.png" class="wh_02 pos_fix"></a>
+
+    <div class="bg_color_mercury display_01">
+        <h1 class="title_02 center margin_05"><em><strong><span class="color_blueAdmin">Risk</span><span class="color_orangeAdmin">Hunt</span></strong></em></h1>
+
+        <h6 class="underline"><strong>Sommaire :</strong></h6>
+        <p class="margin_07">
+            <span class="underline"><strong>Scénarios :</strong></span><br>
+            - <a href="#Scenarios" class="underline">Création de scénario</a><br>
+            - <a href="#Stockage" class="underline">Stockage Scénario</a><br>
+            - <a href="#Recuperation" class="underline">Récupération Scénarios</a><br>
+            <br>
+            <span class="underline"><strong>Server/Web :</strong></span><br>
+            - <a href="#Xampp" class="underline">Xampp avec Unity</a><br>
+            - <a href="#Manager" class="underline">ServerManager.cs</a><br>
+            - <a href="#PHP" class="underline">Scripts en PHP</a><br>
+            - <a href="#Compte" class="underline">Systeme de compte utilisateur</a><br>
+            - <a href="#Creation" class="underline">Création de compte</a><br>
+            - <a href="#Abonnements" class="underline">Abonnements</a><br>
+        </p>
+    </div>
+
+    <div class="body_white display_02">
+        <div class="container">
+            <div class="card-panel z-depth-3 bg_color_orangeAdmin">
+                <h1 class="title_02 center">Présentation du projet</h1>
+                <p class="center">
+                    Riskhunt est le projet que j'ai réalisé en lors de mon <strong>alternance</strong> en 3ème année à e-artsup l'objectif est de créer un <strong>outil</strong> pour des formateurs de professionnel.<br>
+                    Le projet est un <strong>éditeur</strong> de chasse aux risques sur des images 360°,<br>
+                    chaque utilisateur (formateurs) peut <strong>créer un compte</strong> et plus ou moins de scénarios en fonction du niveau de l'<strong>abonnement</strong> de son compte.<br>
+                    Ils peuvent ensuite <strong>partager</strong> leurs scénarios avec n’importe qui (les apprenants).<br>
+                </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="card-panel z-depth-3 bg_color_blueAdmin">
+                <h1 class="title_04 center"><em>Scénarios</em> </h1>
+                <h1 class="title_02 underline" id="Scenarios"><em>Création de scénario :</em></h1>
+                <p>
+                    Le jeu permet de créer et/ou jouer des scénarios, tous le monde peut jouer des scénario sans se connecter<br>
+                    mais les formateurs ont besion de se connecter pour créer des scénarios.<br>
+                    Chaques scénario peut avoir plusieurs niveaux,<br>
+                    lors de la création de niveau ont doit d'abhord séléctionner une image en 360° sur la quelle la chasse aux risques va se dérouler,<br>
+                    ont peut ensuite placer un nombre de points limiter qui seront soit un text ou un quiz pour donner plus d'information sur le rique trouver.<br>
+                    *GIFS*<br>
+                </p>
+
+                <h1 class="title_02 underline" id="Stockage"><em>Stockage Scénario :</em></h1>
+                <p>
+                    Les scénario une fois sauvegarder sont stocker sous la forme d'un dossier qui contient une image et un fichier binaire qui contient les informations des points<br>
+                    pour chaque niveau.<br>
+                    Dans les premières versions ce dossier était stocker localement sur l'ordinateur dans la version finale les scénarios sont stocker dans un server.<br>
+                    *Image save*
+                </p>
+
+                <h1 class="title_02 underline" id="Recuperation"><em>Récupération Scénarios :</em></h1>
+                <p>
+                    Le jeu à besoin de récuperer un dossier de scénario qui peut venir d'un server ou de l'ordinateur, il peut ensuite convertir ce dossier en une classe<br>
+                    qui contient toutes les information pour instantier le scénario<br>
+                    *Image Load*
+                </p>
+
+                <h1 class="title_04 center"><em>Server/Web/Backend</em></h1>
+                <p class="center">
+                    Mon premier projet / chaque partie était nouvelle pour moi
+                    toute cette partie
+                    tous les principaux défis technique du projet
+                </p>
+
+                <h1 class="title_02 underline" id="Xampp"><em>Xampp avec Unity :</em></h1>
+                <p>
+                    Avant de passer d'un fonctionnement locale à server pour le stockage de scénario j'ai d'abord utiliser xampp avec Unity,<br>
+                    Xampp permet de simuler un server mais en restant en locale ce qui ma permit de m'assurer du fonctionnement des system avant de passer sur une version live<br>
+                    La version live utilise O2Switch mais je peut parler des deux versions sur le reste cette page.<br>
+                    *Img Xampp*<br>
+                </p>
+
+                <h1 class="title_02 underline" id="Manager"><em>ServerManager.cs</em></h1>
+                <p>
+                    ServerManager.cs est le script ene C# sur Unity qui permet de gérer toutes les interactions avec le serveur qui soit locale avec Xampp ou live<br>
+                    Voicie quelques fonctions :<br>
+                    *Images Fonctions*<br>
+                </p>
+
+                <h1 class="title_02 underline" id="PHP"><em>Scripts en PHP</em></h1>
+                <p>
+                    ServerManager.cs communique avec le server grace à des scripts en PHP,<br>
+                    j'ai appris les bases du language grace à certain des scripts que j'ai copier<br>
+                    *EXEMPLE SCRIPT COPIER*<br>
+                    *EXEMPLE SCRIPT CREER*<br>
+                </p>
+
+                <h1 class="title_02 underline" id="Compte"><em>Systeme de compte utilisateur</em></h1>
+                <p>
+                    Le projet comporte un system de compte utilisateur avec une création de compte login/logout et suppression de compte.<br>
+                    Chaque compte peut enregister un certain nombre de scénarios.
+                </p>
+
+                <h1 class="title_02 underline" id="Creation"><em>Création de compte</em></h1>
+                <p>
+                    Text
+                </p>
+
+                <h1 class="title_02 underline" id="Abonnements"><em>Abonnements</em></h1>
+                <p>
+                    Text
+                </p>               
+
+                <h1 class="title_04 center"><em>UX</em></h1>
+
+                <h1 class="title_02 underline" id="Post Mortem"><em>Misc</em></h1>
+                <p>
+                    Paypal
+                </p>
+
+                <h1 class="title_02 underline" id="Post Mortem"><em>Post Mortem</em></h1>
+                <p>
+                    Appris
+                    Compte utilisateurs -> potentielle
+                    web/backend = aimer
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
