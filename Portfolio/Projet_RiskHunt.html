@@ -17,21 +17,23 @@
     <div class="bg_color_mercury display_01">
         <h1 class="title_02 center margin_05"><em><strong><span class="color_blueAdmin">Risk</span><span class="color_orangeAdmin">Hunt</span></strong></em></h1>
 
-        <h6 class="underline"><strong>Sommaire :</strong></h6>
-        <p class="margin_07">
-            <span class="underline"><strong>Scénarios :</strong></span><br>
-            - <a href="#Scenarios" class="underline">Création de scénario</a><br>
-            - <a href="#Stockage" class="underline">Stockage Scénario</a><br>
-            - <a href="#Recuperation" class="underline">Récupération Scénarios</a><br>
-            <br>
-            <span class="underline"><strong>Server/Web :</strong></span><br>
-            - <a href="#Xampp" class="underline">Xampp avec Unity</a><br>
-            - <a href="#Manager" class="underline">ServerManager.cs</a><br>
-            - <a href="#PHP" class="underline">Scripts en PHP</a><br>
-            - <a href="#Compte" class="underline">Systeme de compte utilisateur</a><br>
-            - <a href="#Creation" class="underline">Création de compte</a><br>
-            - <a href="#Abonnements" class="underline">Abonnements</a><br>
-        </p>
+        <div class="pos_fix">
+            <h6 class="underline"><strong>Sommaire :</strong></h6>
+            <p class="margin_07">
+                <span class="underline"><strong>Scénarios :</strong></span><br>
+                - <a href="#Scenarios" class="underline">Création de scénario</a><br>
+                - <a href="#Stockage" class="underline">Stockage Scénario</a><br>
+                - <a href="#Recuperation" class="underline">Récupération Scénarios</a><br>
+                <br>
+                <span class="underline"><strong>Server/Web :</strong></span><br>
+                - <a href="#Xampp" class="underline">Xampp avec Unity</a><br>
+                - <a href="#Manager" class="underline">ServerManager.cs</a><br>
+                - <a href="#PHP" class="underline">Scripts en PHP</a><br>
+                - <a href="#Compte" class="underline">Systeme de compte utilisateur</a><br>
+                - <a href="#Creation" class="underline">Création de compte</a><br>
+                - <a href="#Abonnements" class="underline">Abonnements</a><br>
+            </p>
+        </div>       
     </div>
 
     <div class="body_white display_02">
@@ -41,7 +43,7 @@
                 <p class="center">
                     Riskhunt est le projet que j'ai réalisé en lors de mon <strong>alternance</strong> en 3ème année à e-artsup l'objectif est de créer un <strong>outil</strong> pour des formateurs de professionnel.<br>
                     Le projet est un <strong>éditeur</strong> de chasse aux risques sur des images 360°,<br>
-                    chaque utilisateur (formateurs) peut <strong>créer un compte</strong> et plus ou moins de scénarios en fonction du niveau de l'<strong>abonnement</strong> de son compte.<br>
+                    chaque utilisateur (formateur) peut <strong>créer un compte</strong> et plus ou moins de scénarios en fonction du niveau de l'<strong>abonnement</strong> de son compte.<br>
                     Ils peuvent ensuite <strong>partager</strong> leurs scénarios avec n’importe qui (les apprenants).<br>
                 </p>
             </div>
@@ -52,87 +54,108 @@
                 <h1 class="title_04 center"><em>Scénarios</em> </h1>
                 <h1 class="title_02 underline" id="Scenarios"><em>Création de scénario :</em></h1>
                 <p>
-                    Le jeu permet de créer et/ou jouer des scénarios, tous le monde peut jouer des scénario sans se connecter<br>
-                    mais les formateurs ont besion de se connecter pour créer des scénarios.<br>
-                    Chaques scénario peut avoir plusieurs niveaux,<br>
-                    lors de la création de niveau ont doit d'abhord séléctionner une image en 360° sur la quelle la chasse aux risques va se dérouler,<br>
-                    ont peut ensuite placer un nombre de points limiter qui seront soit un text ou un quiz pour donner plus d'information sur le rique trouver.<br>
+                    Le jeu permet de créer et/ou jouer des scénarios, tout le monde peut jouer des scénarios sans se connecter<br>
+                    mais les formateurs ont besoin de se connecter pour créer des scénarios.<br>
+                    <br>
+                    Chaque scénario peut avoir plusieurs niveaux,<br>
+                    lors de la création du niveau on doit d'abhord sélectionner une image en 360° sur laquelle la chasse aux risques va se dérouler,<br>
+                    On peut ensuite placer un nombre de points limiter qui seront soit un texte soit un quiz pour donner plus d'informations sur le risque trouver.<br>
                     *GIFS*<br>
                 </p>
 
                 <h1 class="title_02 underline" id="Stockage"><em>Stockage Scénario :</em></h1>
                 <p>
-                    Les scénario une fois sauvegarder sont stocker sous la forme d'un dossier qui contient une image et un fichier binaire qui contient les informations des points<br>
+                    Les scénarios une fois sauvegardés sont stockés sous la forme d'un dossier qui contient une image et un fichier binaire qui contient les informations des points<br>
                     pour chaque niveau.<br>
-                    Dans les premières versions ce dossier était stocker localement sur l'ordinateur dans la version finale les scénarios sont stocker dans un server.<br>
+                    Dans les premières versions ce dossier était stocké localement sur l'ordinateur dans la version finale les scénarios sont stockés dans un serveur.<br>
                     *Image save*
                 </p>
 
                 <h1 class="title_02 underline" id="Recuperation"><em>Récupération Scénarios :</em></h1>
                 <p>
                     Le jeu à besoin de récuperer un dossier de scénario qui peut venir d'un server ou de l'ordinateur, il peut ensuite convertir ce dossier en une classe<br>
-                    qui contient toutes les information pour instantier le scénario<br>
+                    qui contient toutes les informations pour instancier le scénario<br>
                     *Image Load*
                 </p>
 
                 <h1 class="title_04 center"><em>Server/Web/Backend</em></h1>
                 <p class="center">
-                    Mon premier projet / chaque partie était nouvelle pour moi
-                    toute cette partie
-                    tous les principaux défis technique du projet
+                    Toute cette partie était le plus gros défi technique du projet en plus d'être mon premier projet comportent ces parties.
                 </p>
 
                 <h1 class="title_02 underline" id="Xampp"><em>Xampp avec Unity :</em></h1>
                 <p>
-                    Avant de passer d'un fonctionnement locale à server pour le stockage de scénario j'ai d'abord utiliser xampp avec Unity,<br>
-                    Xampp permet de simuler un server mais en restant en locale ce qui ma permit de m'assurer du fonctionnement des system avant de passer sur une version live<br>
-                    La version live utilise O2Switch mais je peut parler des deux versions sur le reste cette page.<br>
+                    Avant de passer d'un fonctionnement locale à serveur pour le stockage de scénario j'ai d'abord utilisé Xampp avec Unity,<br>
+                    Xampp permet de simuler un serveur mais en restant en locale ce qui ma permit de m'assurer du fonctionnement des systems avant de passer sur une version live<br>
+                    La version live utilise O2Switch mais je peux parler des deux versions sur le reste cette page.<br>
                     *Img Xampp*<br>
                 </p>
 
                 <h1 class="title_02 underline" id="Manager"><em>ServerManager.cs</em></h1>
                 <p>
-                    ServerManager.cs est le script ene C# sur Unity qui permet de gérer toutes les interactions avec le serveur qui soit locale avec Xampp ou live<br>
-                    Voicie quelques fonctions :<br>
+                    ServerManager.cs est le script ene C# sur Unity qui permet de gérer toutes les interactions avec le serveur qui soit local avec Xampp ou live<br>
+                    Voici quelques fonctions :<br>
                     *Images Fonctions*<br>
                 </p>
 
                 <h1 class="title_02 underline" id="PHP"><em>Scripts en PHP</em></h1>
                 <p>
-                    ServerManager.cs communique avec le server grace à des scripts en PHP,<br>
-                    j'ai appris les bases du language grace à certain des scripts que j'ai copier<br>
+                    ServerManager.cs communique avec le serveur grace à des scripts en PHP,<br>
+                    j'ai appris les bases du language grace à certains des scripts que j'ai copiés<br>
                     *EXEMPLE SCRIPT COPIER*<br>
                     *EXEMPLE SCRIPT CREER*<br>
                 </p>
 
                 <h1 class="title_02 underline" id="Compte"><em>Systeme de compte utilisateur</em></h1>
                 <p>
-                    Le projet comporte un system de compte utilisateur avec une création de compte login/logout et suppression de compte.<br>
-                    Chaque compte peut enregister un certain nombre de scénarios.
+                    Le projet comporte un system de compte utilisateur avec une création de compte login/logout et suppression du compte.<br>
+                    La création du compte est requise pour créer des scénarios et les enregistrer.<br>
+                    Chaque compte peut enregister un certain nombre de scénarios.<br>
                 </p>
 
                 <h1 class="title_02 underline" id="Creation"><em>Création de compte</em></h1>
                 <p>
-                    Text
+                    *IMAGE ECRAN CREATION COMPTE*<br>
+                    L'utilisateur doit fournir un nom d'utilisateur et un mot de passe,<br>
+                    l'application enverrait une requête web à un script en PHP pour ajouter le compte à la base de données :<br>
+                    *IMAGE SCRIPT*<br>
+                    Les mots de passe sont crypté<br>
                 </p>
 
                 <h1 class="title_02 underline" id="Abonnements"><em>Abonnements</em></h1>
                 <p>
-                    Text
-                </p>               
+                    Les utilisateurs peuvent acheter un abonnement pour une certaine durée afin d'augmenter le nombre maximum de scénario stocké,<br>
+                    leurs nombres de points et pour pouvoir partager leurs scénarios.<br>
+                    Les abonnements ont une durée et faire un system de timer a été un gros défi technique pour moi :<br>
+                    <span>Timer abonnement</span><br>
+                    *IMAGE SCRIPT TIMER*<br>
+                    présentation timer<br>
+                </p>
 
-                <h1 class="title_04 center"><em>UX</em></h1>
-
-                <h1 class="title_02 underline" id="Post Mortem"><em>Misc</em></h1>
+                <h1 class="title_04 center"><em>Générale</em></h1>
+                <h1 class="title_02 underline" id="UX"><em>UX</em></h1>
                 <p>
-                    Paypal
+                    L'UX a été une partie importante du projet en partie car le projet vise un public par forcément familier avec l'utilisation de jeux vidéo/informatiques.<br>
+                    UX<br>
+                </p>
+
+                <h1 class="title_02 underline" id="Misc"><em>Autre</em></h1>
+                <p>
+                    -Boutique<br>
+                    J'ai utilisé un asset de l'asset store de Unity pour faire la boutique du projet ce qui m’a permis de l'intégrer plus rapidement.<br>
+                    <br>
+                    -Paypal<br>
+                    Le projet fonctionne avec Paypal pour les payements et j'ai pu découvrir et utilisé <a href="https://developer.paypal.com/home" class="color_green">Paypal développer</a>.<br>
+                    <br>
+                    -WebGl
+                    Le projet à une version bureau et une version WebGl mis sur une page web aussi héberger sur O2Switch ce qui ma poser des problèmes de permissions web.
                 </p>
 
                 <h1 class="title_02 underline" id="Post Mortem"><em>Post Mortem</em></h1>
                 <p>
-                    Appris
-                    Compte utilisateurs -> potentielle
-                    web/backend = aimer
+                    J'ai énormément appris lors de ce projet en alternance notamment sur la partie web/backend qui ma beaucoup plus<br>
+                    et je pense que les systems de comptes utilisateurs ont beaucoup de potentiel dans d'autres projets.<br>
+                    Je devais respecter un cahier des charges dans ce projet même si j'avais malgré tous des libertés ce que j'ai apprécié.<br>
                 </p>
             </div>
         </div>
