@@ -12,12 +12,12 @@
 </head>
 
 <body>
-    <a href="index.html"><img src="Assets/BackArrow.png" class="wh_02 pos_fix"></a>
+    <a href="index.html"><img src="Assets/BackArrow.png" class="wh_02 pos_fix" style="z-index: 2;"></a>
 
-    <div class="bg_color_mercury display_01">
-        <h1 class="title_02 center margin_05"><em><strong><span class="color_blueAdmin">Risk</span><span class="color_orangeAdmin">Hunt</span></strong></em></h1>
-
+    <div class="bg_color_mercury wh_05 pos_abs">
         <div class="pos_fix">
+            <h1 class="title_02 center margin_08"><em><strong><span class="color_blueAdmin">Risk</span><span class="color_orangeAdmin">Hunt</span></strong></em></h1>
+
             <h6 class="underline"><strong>Sommaire :</strong></h6>
             <p class="margin_07">
                 <span class="underline"><strong>Scénarios :</strong></span><br>
@@ -28,134 +28,220 @@
                 <span class="underline"><strong>Server/Web :</strong></span><br>
                 - <a href="#Xampp" class="underline">Xampp avec Unity</a><br>
                 - <a href="#Manager" class="underline">ServerManager.cs</a><br>
-                - <a href="#PHP" class="underline">Scripts en PHP</a><br>
+                - <a href="#PHP" class="underline">Scripts PHP/SQL</a><br>
                 - <a href="#Compte" class="underline">Systeme de compte utilisateur</a><br>
                 - <a href="#Creation" class="underline">Création de compte</a><br>
                 - <a href="#Abonnements" class="underline">Abonnements</a><br>
+                <br>
+                <span class="underline"><strong>Générale :</strong></span><br>
+                - <a href="#Xampp" class="underline">UX</a><br>
+                - <a href="#Manager" class="underline">Autre</a><br>
+                - <a href="#PHP" class="underline">Post Mortem</a><br>
             </p>
-        </div>       
+        </div>
     </div>
 
-    <div class="body_white display_02">
-        <div class="container">
-            <div class="card-panel z-depth-3 bg_color_orangeAdmin">
-                <h1 class="title_02 center">Présentation du projet</h1>
-                <p class="center">
-                    Riskhunt est le projet que j'ai réalisé en lors de mon <strong>alternance</strong> en 3ème année à e-artsup l'objectif est de créer un <strong>outil</strong> pour des formateurs de professionnel.<br>
-                    Le projet est un <strong>éditeur</strong> de chasse aux risques sur des images 360°,<br>
-                    chaque utilisateur (formateur) peut <strong>créer un compte</strong> et plus ou moins de scénarios en fonction du niveau de l'<strong>abonnement</strong> de son compte.<br>
-                    Ils peuvent ensuite <strong>partager</strong> leurs scénarios avec n’importe qui (les apprenants).<br>
-                </p>
-            </div>
+    <div class="body_white wh_06 margin_09 display_inlineBlock">
+        <div class="card-panel z-depth-3 bg_color_orangeAdmin whPe_01 margin_10">
+            <h1 class="title_02 center">Présentation du projet</h1>
+            <p class="center">
+                Riskhunt est le projet que j'ai réalisé en lors de mon <strong>alternance</strong> en 3ème année à e-artsup l'objectif est de créer un <strong>outil</strong> pour des formateurs de professionnel.<br>
+                Le projet est un <strong>éditeur</strong> de chasse aux risques sur des images 360°,<br>
+                chaque utilisateur (formateur) peut <strong>créer un compte</strong> et plus ou moins de scénarios en fonction du niveau de l'<strong>abonnement</strong> de son compte.<br>
+                Ils peuvent ensuite <strong>partager</strong> leurs scénarios avec n’importe qui (les apprenants).<br>
+                <br>
+                Le projet utilise <strong>Unity</strong> et <strong>PhpMyAdmin</strong> et il comporte du <strong>C#</strong>, <strong>PHP</strong>, <strong>SQL</strong>.<br>
+            </p>
         </div>
 
-        <div class="container">
-            <div class="card-panel z-depth-3 bg_color_blueAdmin">
-                <h1 class="title_04 center"><em>Scénarios</em> </h1>
-                <h1 class="title_02 underline" id="Scenarios"><em>Création de scénario :</em></h1>
-                <p>
-                    Le jeu permet de créer et/ou jouer des scénarios, tout le monde peut jouer des scénarios sans se connecter<br>
-                    mais les formateurs ont besoin de se connecter pour créer des scénarios.<br>
+        <div class="card-panel z-depth-3 bg_color_blueAdmin whPe_01 margin_10">
+            <!--Scénarios-->
+            <h1 class="title_04 center"><em>Scénarios</em> </h1>
+            <h1 class="title_02 underline" id="Scenarios"><em>Création de scénario :</em></h1>
+            <p>
+                Le jeu permet de <strong>créer</strong> et/ou <strong>jouer</strong> des <strong>scénarios</strong> de chasses aux risques, tout le monde peut jouer des scénarios <strong>sans se connecter</strong><br>
+                mais les formateurs ont besoin de se <strong>connecter</strong> pour en <strong>créer</strong>.<br>
+                <br>
+                Chaque <strong>scénarios</strong> peut avoir plusieurs <strong>niveaux</strong>, chaque niveau contient une <strong>image 360°</strong> et une chasse, le scénario et les niveaux ont besoin d'être <strong>nomé</strong><br>
+                lors de la création du niveau on doit d'abhord sélectionner une <strong>image en 360°</strong> prise sur un <strong>lieu de travail</strong> avec des dangers sur laquelle la <strong>chasse aux risques</strong> va se dérouler.<br>
+                On peut ensuite placer un nombre de <strong>points</strong> limiter qui <strong>représente les risques</strong> à trouver et seront soit un <strong>texte</strong> soit un <strong>quiz</strong> pour donner plus d'informations sur le risque trouver.<br>
+                <br>
+            </p>
+            <img src="Assets/RiskHunt/RH_ScenarioC.gif" class="wh_03 display_inlineBlock boxShadow_02">
+            <img src="Assets/RiskHunt/LoadImage.png" class="wh_03 display_inlineBlock border_black boxShadow_02">
+            <img src="Assets/RiskHunt/RH_QuizC.gif" class="wh_04 center border_black boxShadow_02">
+
+            <h1 class="title_02 underline" id="Stockage"><em>Stockage Scénario :</em></h1>
+            <p>
+                Dans les <strong>premières versions</strong> les scénarios étaient stockés <strong>localement</strong> sur l'ordinateur.<br>
+                Mais le but du projet est de <strong>partagé</strong> ces scénarios c'est pourquoi ils sont stockés dans un serveur dans la version finale pour que plusieurs personne y est accès.<br>
+                <br>
+            </p>
+
+            <div class="display_inlineFlex">
+                <img src="Assets/RiskHunt/RH_Save.gif" class="wh_04 display_inlineBlock margin_12 border_width_01 border_blueAdmin boxShadow_01">
+                <p class="display_inlineBlock wh_03 margin_07">
+                    Pour <strong>sauvegardés</strong> les <strong>scénarios</strong> une fois créer ils sont <strong>transformer et stockés</strong> sous la forme d'un <strong>dossier</strong>
+                    qui contient pour chaque niveau l'<strong>image360°</strong> et un <strong>fichier</strong> binaire qui contient les <strong>informations</strong> des points.<br>
                     <br>
-                    Chaque scénario peut avoir plusieurs niveaux,<br>
-                    lors de la création du niveau on doit d'abhord sélectionner une image en 360° sur laquelle la chasse aux risques va se dérouler,<br>
-                    On peut ensuite placer un nombre de points limiter qui seront soit un texte soit un quiz pour donner plus d'informations sur le risque trouver.<br>
-                    *GIFS*<br>
+                    Une fois sauvegarder le joueur obtient un <strong>lien/code</strong> du scénario qui servira à le <strong>partagé</strong>.<br>
                 </p>
+            </div>
 
-                <h1 class="title_02 underline" id="Stockage"><em>Stockage Scénario :</em></h1>
-                <p>
-                    Les scénarios une fois sauvegardés sont stockés sous la forme d'un dossier qui contient une image et un fichier binaire qui contient les informations des points<br>
-                    pour chaque niveau.<br>
-                    Dans les premières versions ce dossier était stocké localement sur l'ordinateur dans la version finale les scénarios sont stockés dans un serveur.<br>
-                    *Image save*
-                </p>
+            <h1 class="title_02 underline" id="Recuperation"><em>Récupération Scénarios :</em></h1>
+            <p>
+                Pour charger un scénario le jeu à besoin de <strong>récuperer</strong> un <strong>dossier</strong> de <strong>scénario</strong> qui peut venir d'un <strong>serveur</strong> ou de l'<strong>ordinateur</strong>,
+                il peut ensuite <strong>convertir</strong> ce dossier en une <strong>classe</strong> Unity C# qui contient toutes les informations pour <strong>instancier</strong> le scénario<br>
+                Les utilisateurs qui ont créer un scénario peuvent partagé leurs <strong>code</strong> ce qui permet de à nimporte qui de <strong>charger leurs scénario</strong> et le jouer :<br>
+                <br>
+            </p>
+            <img src="Assets/RiskHunt/RH_ScenarioL.gif" class="wh_04 center boxShadow_02">
+            <br>
 
-                <h1 class="title_02 underline" id="Recuperation"><em>Récupération Scénarios :</em></h1>
-                <p>
-                    Le jeu à besoin de récuperer un dossier de scénario qui peut venir d'un server ou de l'ordinateur, il peut ensuite convertir ce dossier en une classe<br>
-                    qui contient toutes les informations pour instancier le scénario<br>
-                    *Image Load*
-                </p>
+            <!--Server-->
+            <h1 class="title_04 center"><em>Server/Web/Backend</em></h1>
+            <p class="center">
+                Toute cette partie était le plus gros <strong>défi technique</strong> du projet en plus d'être mon premier projet comportent ces <strong>solutions</strong>.
+            </p>
 
-                <h1 class="title_04 center"><em>Server/Web/Backend</em></h1>
-                <p class="center">
-                    Toute cette partie était le plus gros défi technique du projet en plus d'être mon premier projet comportent ces parties.
-                </p>
+            <h1 class="title_02 underline" id="Xampp"><em>Xampp avec Unity :</em></h1>
+            <p>
+                Avant de passer d'un fonctionnement <strong>locale</strong> à serveur pour le stockage de scénario j'ai d'abord utilisé <strong>Xampp</strong> avec <strong>Unity</strong>,<br>
+                Xampp permet de <strong>simuler</strong> un <strong>serveur</strong> mais en restant en locale ce qui ma permit de m'assurer du fonctionnement des <strong>systems</strong><br>
+                avant de passer à une version live qui utilise <strong>O2Switch</strong>.<br>
+                <br>
+                Xampp et O2Switch utilise <strong>PhpMyAdmin</strong> ce qui ma permis de me familliarisé avec et avoir une transition plus simple.<br>
+                je peux faire référence aux deux versions sur le reste cette page.<br>
+                <br>
+            </p>
+            <img src="Assets/RiskHunt/Xampp_01.png" class="wh_03 display_inlineBlock border_black boxShadow_02">
+            <img src="Assets/RiskHunt/PhpMyAdmin_01.png" class="wh_03 display_inlineBlock border_black boxShadow_02">
 
-                <h1 class="title_02 underline" id="Xampp"><em>Xampp avec Unity :</em></h1>
-                <p>
-                    Avant de passer d'un fonctionnement locale à serveur pour le stockage de scénario j'ai d'abord utilisé Xampp avec Unity,<br>
-                    Xampp permet de simuler un serveur mais en restant en locale ce qui ma permit de m'assurer du fonctionnement des systems avant de passer sur une version live<br>
-                    La version live utilise O2Switch mais je peux parler des deux versions sur le reste cette page.<br>
-                    *Img Xampp*<br>
-                </p>
+            <h1 class="title_02 underline" id="Manager"><em>ServerManager.cs</em></h1>
+            <p>
+                <strong>ServerManager.cs</strong> est le script en <strong>C# sur Unity</strong> qui permet de gérer toutes les <strong>interactions</strong> avec le <strong>serveur</strong> qui soit local avec Xampp ou live.<br>
+                Le script utilise la classe "<strong>UnityWebRequest</strong>" pour envoyer des <strong>requêtes web</strong> aux scripts en php.<br>
+                <br>
+                <u><strong>SetMaxSave :</strong></u>
+            </p>
+            <img src="Assets/RiskHunt/RH_SetMaxSave.png" class="wh_04 boxShadow_02">
+            <p>
+                <strong>SetMaxSave</strong> permet de définir un nombre de <strong>scénarios sauvegarder</strong>(newMaxSave) maximum pour un utilisateur spécifique(uId),<br>
+                comme beaucoup des autres fonctions elle utilise la class <strong>WWWForm</strong> qui représente une <strong>web form</strong> qui permet d'envoyer des informations à un script ici <strong>SetMaxSave.php</strong>.<br>
+                J'utilise la class <strong>UnityWebRequest</strong> pour envoyer une requête web du type <strong>POST</strong> pour envoyer la form générer en haut, le script se chargera de <strong>changer la valeur</strong> du bon utilisateur dans la <strong>base de données</strong>.<br>
+                <br>
+            </p>
 
-                <h1 class="title_02 underline" id="Manager"><em>ServerManager.cs</em></h1>
-                <p>
-                    ServerManager.cs est le script ene C# sur Unity qui permet de gérer toutes les interactions avec le serveur qui soit local avec Xampp ou live<br>
-                    Voici quelques fonctions :<br>
-                    *Images Fonctions*<br>
-                </p>
+            <p><u><strong>GetMaxSave :</strong></u></p>
+            <img src="Assets/RiskHunt/RH_GetMaxSave.png" class="wh_04 boxShadow_02">
+            <p>
+                <strong>GetMaxSave</strong> est très similaire, elle permet d'<strong>obtenir</strong> le nombre de sauvegarde maximum d'un utilisateur mais la partie <strong>EndWebRequest</strong> est plus importante<br>
+                car elle permet de récupérer la <strong>valeur retourné</strong> par le script php dans "<strong>webRequest.downloadHandler.text</strong>" qui est un nombre sous la forme d'un texte.<br>
+                Cette fonction est appelé à chaque fois qu'un utilisateur upload un scénario.<br>
+                <br>
+            </p>
 
-                <h1 class="title_02 underline" id="PHP"><em>Scripts en PHP</em></h1>
-                <p>
-                    ServerManager.cs communique avec le serveur grace à des scripts en PHP,<br>
-                    j'ai appris les bases du language grace à certains des scripts que j'ai copiés<br>
-                    *EXEMPLE SCRIPT COPIER*<br>
-                    *EXEMPLE SCRIPT CREER*<br>
-                </p>
+            <h1 class="title_02 underline" id="PHP"><em>Scripts PHP/SQL</em></h1>
+            <p>
+                <strong>ServerManager.cs</strong> communique avec des <strong>scripts PHP</strong> stockés sur le serveur,<br>
+                j'ai appris les bases du language grace à certains des scripts que j'ai récupérés.<br>
+                <br>
+                <u><strong>SetMaxSave.php :</strong></u>
+            </p>
+            <img src="Assets/RiskHunt/PHP_SetMaxSave.png" class="boxShadow_02">
+            <p>
+                Ce script permet de <strong>définir</strong> le nombre de <strong>scénarios sauvegarder</strong> maximum pour un utilisateur.<br>
+                "<strong>require</strong>" permets d'<strong>appeler</strong> un autre script ici c'est celui qui permet de se <strong>connecter à la base de données</strong>.<br>
+                <strong>$_POST['Nom']</strong> permets d'<strong>obtenir</strong> les valeurs contenus dans la <strong>web form</strong> envoyer depuis Unity, ici je récupére la nouvelle valeur de limite de scénario et l'id de l'utilisateur.<br>
+                <strong>$query</strong> est la requête SQL qui va permettre de changer la valeur pour le bon utilisateur.<br>
 
-                <h1 class="title_02 underline" id="Compte"><em>Systeme de compte utilisateur</em></h1>
-                <p>
-                    Le projet comporte un system de compte utilisateur avec une création de compte login/logout et suppression du compte.<br>
-                    La création du compte est requise pour créer des scénarios et les enregistrer.<br>
-                    Chaque compte peut enregister un certain nombre de scénarios.<br>
-                </p>
+            </p>
 
-                <h1 class="title_02 underline" id="Creation"><em>Création de compte</em></h1>
-                <p>
-                    *IMAGE ECRAN CREATION COMPTE*<br>
-                    L'utilisateur doit fournir un nom d'utilisateur et un mot de passe,<br>
-                    l'application enverrait une requête web à un script en PHP pour ajouter le compte à la base de données :<br>
-                    *IMAGE SCRIPT*<br>
-                    Les mots de passe sont crypté<br>
-                </p>
+            <p><u><strong>GetMaxSave.php :</strong></u></p>
+            <img src="Assets/RiskHunt/PHP_GetMaxSave.png" class="boxShadow_02">
+            <p>
+                Très similaire à <strong>SetMaxSave</strong>, mais ne <strong>demande pas de valeur</strong> mais un <strong>ID</strong> pour récupérer le nombre de scénarios maximum d'un utilisateur ce qui permet ensuite de les limiter dans Unity.<br>
+                "<strong>echo</strong>" permets de <strong>renvoyer une valeur</strong> à Unity ce qui peut être utilisé pour le <strong>debug</strong> avec SetMaxSave et qui ici est utilisé pour renvoyer la valeur demander.<br>
+            </p>
 
-                <h1 class="title_02 underline" id="Abonnements"><em>Abonnements</em></h1>
-                <p>
-                    Les utilisateurs peuvent acheter un abonnement pour une certaine durée afin d'augmenter le nombre maximum de scénario stocké,<br>
-                    leurs nombres de points et pour pouvoir partager leurs scénarios.<br>
-                    Les abonnements ont une durée et faire un system de timer a été un gros défi technique pour moi :<br>
-                    <span>Timer abonnement</span><br>
-                    *IMAGE SCRIPT TIMER*<br>
-                    présentation timer<br>
-                </p>
+            <p><u><strong>GetAllDirectoryInDirectory.php :</strong></u></p>
+            <img src="Assets/RiskHunt/PHP_DirDir.png" class="boxShadow_02">
+            <p>
+                Ce script est <strong>utilitaire</strong>, il permet de récupérer une <strong>liste de tous les dossiers dans un dossier</strong> en renvoyant leurs chemins séparer par "&"<br>
+                c'est un script que j'ai réalisé à partir d'autres scripts similaires que j'ai pu trouver sur internet.<br>
+            </p>
 
+            <h1 class="title_02 underline" id="Compte"><em>Systeme de compte utilisateur</em></h1>
+            <p>
+                Le projet comporte un <strong>system</strong> de <strong>compte utilisateur</strong> avec une création de compte login/logout et suppression du compte.<br>
+                La création du compte est <strong>requise</strong> pour créer des scénarios et les enregistrer.<br>
+                Chaque compte peut enregister un <strong>nombre limité</strong> en fonction de l'abonnement de <strong>scénarios</strong>.<br>
+                <br>
+            </p>
+
+            <p><br><u><strong>Création de compte :</strong></u></p>
+            <img src="Assets/RiskHunt/RH_CreateAccount.png" class="wh_04 center boxShadow_02">
+            <p>
+                <br>
+                L'utilisateur doit fournir un <strong>nom d'utilisateur</strong> et un <strong>mot de passe</strong> qui n'ont pas besoin d'être unique,<br>
+                l'application envoie une <strong>requête web</strong> à un script en PHP pour créer le compte en l'ajoutant à la <strong>base de données</strong> et en cryptant le mot de passe.<br>
+            </p>
+
+            <p><br><u><strong>Login :</strong></u></p>
+            <img src="Assets/RiskHunt/RH_Login.png" class="wh_04 center boxShadow_02">
+            <p>
+                <br>
+                Une fois le compte créé l'utilisateur peut s'y connecter avec le <strong>nom d'utilisateur</strong> et <strong>mot de passe</strong>.
+            </p>
+
+            <h1 class="title_02 underline" id="Abonnements"><em>Abonnements</em></h1>
+            <p>
+                Les utilisateurs peuvent <strong>acheter</strong> un abonnement pour une certaine durée afin de :<br>
+                augmenter le nombre maximum de <strong>scénario</strong> stocké et de points par niveau maximum et pour pouvoir partager leurs scénarios.<br>
+                <br>
+                Les abonnements sont <strong>limité</strong> dans le <strong>temps</strong> et faire un <strong>systeme de timer</strong> a été un gros défi technique pour moi :<br>
+                <span>Timer abonnement</span><br>
+                <br>
+                J'ai réaliser de la <strong>veille technique</strong> qui ma mener à plusieurs solutions complexes j'ai fini par utiliser une <strong>solution plus simple</strong> :<br>
+                J'utilise la fonction <strong>time()</strong> en php qui permet de récuper le temps écouler en seconde depuis le 1er janvier 1970(Unix time).<br>
+                à chaque session le <strong>résultat de time()</strong> est <strong>sauvegardé</strong> pour l'utilisateur et <strong>comparer</strong> au dernier résultat de time() ce qui permet de calculer la différence et donc le temps écouler<br>
+                <br>
+                C'est la fonction <strong>ManageTimeStamp()</strong> qui communique avec <strong>TimeDiff.php</strong> qui opère cette partie :<br>
+            </p>
+            <img src="Assets/RiskHunt/PHP_ManageTimeStamp.png" class="center boxShadow_02">
+            <br>
+
+            <!--Générale-->
+            <div class="card-panel z-depth-3 bg_color_yellowL">
                 <h1 class="title_04 center"><em>Générale</em></h1>
                 <h1 class="title_02 underline" id="UX"><em>UX</em></h1>
                 <p>
-                    L'UX a été une partie importante du projet en partie car le projet vise un public par forcément familier avec l'utilisation de jeux vidéo/informatiques.<br>
-                    UX<br>
+                    L'<strong>UX</strong> a été une partie importante du projet car le projet vise un public qui n'est par forcément <strong>familier</strong> avec l'utilisation de <strong>jeux vidéos/informatique</strong>.<br>
+                    J'ai pu intergrer des conventions dans le projet comme la touche tab pour passer de zone de text à une autre et la touche entrer pour soumettre par exemple dans le menu de login.<br>
+                    Tous au long du jeu il y'a des <strong>icones de points d'interogations</strong> qui permetent d'afficher une <strong>explication</strong> de chaque élements en passant la souris dessus<br>
                 </p>
 
                 <h1 class="title_02 underline" id="Misc"><em>Autre</em></h1>
                 <p>
-                    -Boutique<br>
-                    J'ai utilisé un asset de l'asset store de Unity pour faire la boutique du projet ce qui m’a permis de l'intégrer plus rapidement.<br>
+                    -Boutique :<br>
+                    J'ai utilisé un asset de l'<strong>asset store</strong> de Unity pour faire la <strong>boutique</strong> du projet ce qui m’a permis de l'<strong>intégrer</strong> plus rapidement.<br>
                     <br>
-                    -Paypal<br>
-                    Le projet fonctionne avec Paypal pour les payements et j'ai pu découvrir et utilisé <a href="https://developer.paypal.com/home" class="color_green">Paypal développer</a>.<br>
+                    -Paypal :<br>
+                    La <strong>boutique</strong> du projet fonctionne avec <strong>Paypal</strong> pour les payements et j'ai pu découvrir et utilisé <a href="https://developer.paypal.com/home" class="color_red">Paypal développer</a>.<br>
                     <br>
-                    -WebGl
-                    Le projet à une version bureau et une version WebGl mis sur une page web aussi héberger sur O2Switch ce qui ma poser des problèmes de permissions web.
+                    -WebGl :<br>
+                    Le projet à une version <strong>bureau</strong> et une version <strong>WebGl</strong> mis sur une page web aussi héberger sur O2Switch ce qui ma poser des problèmes de <strong>permissions web</strong>.<br>
+                    <br>
+                    -Langue :<br>
+                    Le projet à un <strong>systeme de language</strong> avec un fichier excel qui prend en compte l'<strong>anglais</strong> et le <strong>français</strong>.<br>
+                    <br>
                 </p>
 
                 <h1 class="title_02 underline" id="Post Mortem"><em>Post Mortem</em></h1>
                 <p>
-                    J'ai énormément appris lors de ce projet en alternance notamment sur la partie web/backend qui ma beaucoup plus<br>
-                    et je pense que les systems de comptes utilisateurs ont beaucoup de potentiel dans d'autres projets.<br>
-                    Je devais respecter un cahier des charges dans ce projet même si j'avais malgré tous des libertés ce que j'ai apprécié.<br>
+                    J'ai énormément appris lors de ce projet en alternance notamment sur la partie <strong>web/backend</strong> qui ma beaucoup plus<br>
+                    et je pense que les <strong>systemes de comptes utilisateurs</strong> ont beaucoup de potentiel dans d'autres projets.<br>
+                    Je devais respecter un <strong>cahier des charges</strong> dans ce projet même si j'avais malgré tous des libertés ce que j'ai apprécié.<br>
                 </p>
             </div>
         </div>

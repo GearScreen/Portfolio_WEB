@@ -13,6 +13,7 @@
     --OrangeAdmin: #Eeb13b;
     --BlueAdmin: #6a7eec;
     --Mercury: #E2e2e2;
+    --YellowLetter: #e1e368;
     /*#endregion*/
 }
 
@@ -107,6 +108,14 @@ body {
 .bg_color_mercury {
     background-color: var(--Mercury);
 }
+
+.color_yellowL {
+    color: var(--YellowLetter);
+}
+
+.bg_color_yellowL {
+    background-color: var(--YellowLetter);
+}
 /*#endregion*/
 
 /*#region Display*/
@@ -143,11 +152,6 @@ body {
 /*#endregion*/
 
 /*#region Spacing*/
-.Margin10 {
-    margin-left: 10%;
-    margin-right: auto;
-}
-
 .margin_01{
     margin-left: 5%;
     margin-right: auto;
@@ -178,6 +182,33 @@ body {
     margin-left: 1em;
 }
 
+.margin_08 {
+    margin: 2em 0 2em 6em;
+}
+
+.margin_09 {
+    margin-left: 19.8%;
+}
+
+.margin_10 {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.margin_11 {
+    margin-left: 10%;
+    margin-right: auto;
+}
+
+.margin_12 {
+    margin-left: -15%;    
+}
+
+.margin_13 {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 .padding_01 {
     padding: 10% 10% 10% 10%;
 }
@@ -196,22 +227,42 @@ body {
     width: 4em;
     height: 4em;
 }
-/*#endregion*/
 
-.display_01 {
-    width: 19.5%;
-    height: 100%;
-    position: absolute;
+.wh_03 {
+    width: 49.5%;
+    height: 24em;
 }
 
-.display_02 {  
+.wh_04 {
+    width: 48em;
+    height: 24em;
+}
+
+.wh_05 {
+    width: 19.5%;
+    height: 1016.5%;
+}
+
+.wh_06 {
     width: 80%;
     height: 100%;
-    display: inline-block;
-    margin-left: 19.8%;
 }
 
-.display_03 {    
+.wh_07 {
+    width: 30em;
+    height: 26em;
+}
+
+.whPe_01 {
+    width: 75%;
+}
+/*#endregion*/
+
+display_inlineBlock {
+    display: inline-block;
+}
+
+.display_inlineFlex {
     display: inline-flex;
 }
 /*#endregion*/
@@ -356,15 +407,34 @@ body {
     text-decoration: underline;
 }
 
-.border_solid {
-    border : solid;
+.border_dashed {
+    border: dashed;
 }
 
 .border_black {
+    border: solid;
     border-color: black;
 }
 
+.border_blueAdmin {
+    border: solid;   
+    border-color: var(--BlueAdmin);
+}
+
 .border_radius_01 {
-    border-radius : 15px;
+    border: solid;
+    border-radius: 15px;
+}
+
+.border_width_01 {
+    border-width: 2em;
+}
+
+.boxShadow_01 {
+    box-shadow: -1px 1px 5px black;
+}
+
+.boxShadow_02 {
+    box-shadow: 2px 2px 5px black;
 }
 /*#endregion*/
