@@ -1,0 +1,82 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>MultiPlayer Project</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <!--#region Arrow + Title -->
+    <div class="pos_fix img_arrow">
+        <a href="index.html"><img src="Assets/BackArrow.png" class="wh_02"></a>
+    </div>
+
+    <h1 class="title_02 center margin_04 padding_02">MultiPlayer Demo</h1>
+    <!--#endregion -->
+
+    <div class="container">
+        <div class="card-panel grey lighten-2, z-depth-3">
+            <h1 class="title_02 center">Présentation du projet</h1>          
+            <p class="center">
+                Un projet de test en multijoueur en utilisant <strong>Photon</strong> avec <strong>Unity</strong>.
+            </p>
+
+            <h1 class="title_02 center">Image du projet :</h1>
+            <img src="Assets/MPT_Lobby.png" class="img_06">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card-panel grey lighten-2, z-depth-3">
+            <h1 class="title_02 center">Projet</h1>
+            <h3 class="title_02 underline">Toutes les fonctionnalitée :</h3>
+            <p>
+                Chaques utiisateur peut créer ou rejoindre une <strong>room</strong> (jusqu'à 3 joueurs par room),<br>
+                le joueur qui "possède" la room peut lancer la partie,<br>
+                chaques joueurs charge la <strong>même scène/level</strong> et ont accès à un <strong>chat écrit</strong>.<br>
+                <br>
+                J'ai aussi créer un vfx synchroniser entre tous les joueurs.
+            </p>
+
+            <h3 class="title_02 underline">Technique :</h3>
+            <p>
+                Ce projet utiise la version gratuite de <strong>Photon</strong> avec Unity, il sagit de <strong>multijoueur en ligne</strong>,<br>
+                chaque action d'un joueur est retransmis et répliquées aux versions locales des autres joueurs.
+            </p>
+
+            <h3 class="title_02 underline">Code :</h3>
+            <p>
+                Ici une fonction de Photon "OnJoinedRoom" qui est appeller lorsque le joueur rejoin une <strong>room</strong> :
+            </p>
+            <img src="Assets/MPT_OnJoinRoom.png" class="img_10">
+
+            <h3 class="title_02 underline">Gif du projet :</h3>
+            <div class="row">
+                <div class="col s6 m6">
+                    <img src="Assets/MPT_Room.gif" class="img_09">
+                </div>
+
+                <div class="col s6 m6">
+                    <img src="Assets/MPT_Play.gif" class="img_09">
+                </div>
+            </div>
+
+            <h3 class="title_02 underline">Post mortem :</h3>
+            <p>
+                J'ai pu apprendre à utiliser Photon et à ajouter du multijoueur simple dans un projet,<br>
+                ce projet ma aussi permis de me sensibilisé sur le développement de jeux en multijoueur online.
+            </p>
+        </div>
+    </div>
+
+    <h2 class="title_03 center">Page Itch.io du projet</h2>
+    <a href="https://yoan-lechevalier.itch.io/multiplayerdemo"><img src="https://static.itch.io/images/app-icon.png" class="img_100px"></a>
+</body>
+</html>
