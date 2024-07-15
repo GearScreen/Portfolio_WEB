@@ -33,6 +33,10 @@ body {
     text-align: center;
 }
 
+.tLeft {
+    text-align: left;
+}
+
 .title_01 {
     font-size: 400%;    
 }
@@ -130,6 +134,46 @@ body {
 .bg_color_orangeO {
     background-color: var(--OrangeOrange);
 }
+
+.color-darkBlue {
+    color: rgb(26, 33, 51);
+}
+
+.bgcolor-darkBlue {
+    background-color: rgb(26, 33, 51);
+}
+
+.color-lightDarkblue {
+    color: rgb(34, 45, 71);
+}
+
+.bgcolor-lightDarkblue {
+    background-color: rgb(34, 45, 71);
+}
+
+.color_goldLeague {
+    color: rgb(120, 90, 40);
+}
+
+.color_lightYellowLeague {
+    color: rgb(185, 171, 132);
+}
+
+.color_yellowLeague {
+    color: rgb(189, 138, 57);
+}
+
+.color_greyLeague {
+    color: rgb(158, 153, 138);
+}
+
+.color_blueLeague {
+    color: rgb(2, 108, 141);
+}
+
+.color_whiteLeague {
+    color: rgb(219, 210, 193);
+}
 /*#endregion*/
 
 /*#region Display*/
@@ -138,6 +182,35 @@ body {
     margin-right: auto;
     display: block;
     text-align: center;
+}
+
+.display_inlineBlock {
+    display: inline-block;
+}
+
+.display_inlineFlex {
+    display: inline-flex;
+}
+
+.dBlock {
+    display: block;
+}
+
+.dGrid {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.grid_01 {
+    grid-template-columns: 50% 50%;
+}
+
+.dFlex {
+    display: flex;
+}
+
+.goog-te-combo {
+    display: inline-block;
 }
 
 /*#region Positions*/
@@ -248,6 +321,10 @@ body {
 .padding_03 {
     padding: 2rem 2rem;
 }
+
+.padding_04 {
+    padding-left: 6%;
+}
 /*#endregion*/
 
 /*#region Width/Height*/
@@ -299,35 +376,29 @@ body {
     height: 15em;
 }
 
+/*Ratio : 1.8*/
+.wh_11 {
+    width: 65em;
+    height: 36em;
+}
+
+/*Ratio : 2.5*/
+.wh_12 {
+    width: 55em;
+    height: 30em;
+}
+
 .whPe_01 {
     width: 75%;
 }
+
+.maxWh-01 {
+    max-width: 75%;
+    max-height: 75%;
+}
+
 /*#endregion*/
 
-.display_inlineBlock {
-    display: inline-block;
-}
-
-.display_inlineFlex {
-    display: inline-flex;
-}
-
-.dBlock {
-    display: block;
-}
-
-.dGrid {
-    display: grid;
-    grid-template-columns: auto auto;
-}
-
-.dFlex {
-    display: flex;
-}
-
-.goog-te-combo {
-    display: inline-block;
-}
 /*#endregion*/
 
 /*#region Images*/
@@ -504,6 +575,16 @@ body {
 .border_blueAdmin {
     border: solid;   
     border-color: var(--BlueAdmin);
+}
+
+.border_goldLeague {
+    border: solid;
+    border-color: rgb(120, 90, 40);
+}
+
+.border_blueLeague {
+    border: solid;
+    border-color: rgb(2, 108, 141);
 }
 
 .border_radius_01 {

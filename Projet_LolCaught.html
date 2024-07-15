@@ -1,0 +1,225 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>RiskHunt Project</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bgcolor-darkBlue">
+    <a href="index.html"><img src="Assets/BackArrow.png" class="wh_02 pos_fix" style="z-index: 2;"></a>
+    <h4 class="center margin_04 padding_02 color_yellowLeague">League of Legends Caught</h4>
+
+    <div class="container">
+        <div class="card-panel z-depth-3 border_goldLeague bgcolor-lightDarkblue">
+            <h5 class="center color_lightYellowLeague">- Présentation du projet -</h5>
+            <br />
+            <p class="center color_greyLeague">
+                <span class="color_lightYellowLeague tLeft"><strong>Contexte :</strong></span> <br />
+                Mon deuxième projet pour mon <span class="color_whiteLeague"><strong>apprentissage de React</strong></span>, lors de
+                <a href="https://barbasoyun.github.io/ReactApp/" target="_blank">mon premier projet</a> j'avais suivi un tutoriel, <br />
+                j'ai réalisé ce nouveau projet <span class="color_whiteLeague"><strong>indépendamment</strong></span> en utilisant certaines bases du premier. <br />
+                <br />
+                <span class="color_lightYellowLeague"><strong>Concept :</strong></span> <br />
+                <span class="color_whiteLeague"><strong>L'idée du projet</strong></span> vient de mon expérience personnelle avec des
+                <span class="color_whiteLeague"><strong>sites de visualisation de données</strong></span> des comptes league of legends comme
+                <a href="https://masterychart.com" target="_blank">Mastery Chart</a>. <br />
+                <br />
+                j'ai remarqué que le <span class="color_whiteLeague"><strong>principal intérêt</strong></span> de ce type de site <span class="color_whiteLeague"><strong>
+                n'est pas vraiment de visualiser les données mais de les comparer entre joueurs</strong></span> car la plupart du temps <br />
+                quelqu'un qui visualise ces donnés va ensuite partager cette visualisation sur des réseaux sociaux(Twitter/X, Discord, etc.) <br />
+                ainsie que le lien pour que d'autres gens puissent voir leurs propres donnés et pouvoir les comparer. <br />
+                <br />
+                Je pense que l'intérêt de la comparaison vient en partie des aspect <span class="color_whiteLeague"><strong>multijoueur et compétitifs</strong></span> du jeu <br />
+                Avec Lol Caught j'essaie de <span class="color_whiteLeague"><strong>proposer de directement comparer</strong></span> les stats entre deux joueurs ce qui permet 
+                d'<span class="color_whiteLeague"><strong>approfondir</strong></span> cette comparaison et de mieux la visualiser. <br />
+                Cette comparaison n'a pour le moment pas d'intérêt compétitif mais est faite pour <span class="color_whiteLeague"><strong>renforcer l'aspect multijoueur</strong></span>. <br />
+            </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card-panel z-depth-3 border_goldLeague bgcolor-lightDarkblue">
+            <!--Projet-->
+            <h5 class="center color_lightYellowLeague">- Projet -</h5>
+            <p class="center color_greyLeague">
+                <a href="https://github.com/BarbasOyun/Lol_Caught/tree/main" target="_blank">Github du projet</a> <br />
+                Note : la clef d'API est quelconque ce qui veut dire que le projet ne fonctionnera pas correctement(plus de précision en bas). 
+                Cette page github est faite pour voir le code du projet.<br />
+                <br />
+                Le projet est constitué d'<span class="color_whiteLeague"><strong>une page</strong></span> sur laquelle il y a 
+                <span class="color_whiteLeague"><strong>deux affichages</strong></span> de joueurs qui permettent chacun de 
+                <span class="color_whiteLeague"><strong>chercher un joueur</strong></span>. <br />
+                Pour chaque affichage il y a deux champs afin de trouver un joueur en utilisant l'API de Riot games il faut fournire le pseudo du joueur(GameName)
+                et le Tag qui seront séparé par un "#" <br />
+                Une fois que les deux joueurs seront trouvés la comparaison pourra s'afficher. <br />
+            </p>
+            <br />
+            <img src="Assets/LolCaught/LolCaught_Search_01.png" class="center wh_11 border_black boxShadow_01">
+            <br />
+            <p class="center color_greyLeague">
+                Le premier joueur à été trouvé, des premières stats générales <span class="color_whiteLeague"><strong>s'affichent</strong></span> : <br />
+                Le <span class="color_whiteLeague"><strong>niveau du compte</strong></span>(summoner level), <span class="color_whiteLeague"><strong>l'icone du compte</strong></span>,
+                le <span class="color_whiteLeague"><strong>champion le plus jouer</strong></span>,
+                le <span class="color_whiteLeague"><strong>nombre de morts totale</strong></span> dans l'historique
+                et la <span class="color_whiteLeague"><strong>moyenne des morts</strong></span>.
+            </p>
+            <br />
+            <img src="Assets/LolCaught/LolCaught_Search_02.png" class="center wh_11 border_black boxShadow_01">
+            <br />
+            <p class="center color_greyLeague">
+                Les deux joueurs ont été trouver, le joueur avec le plus de mort reçoit un <span class="color_whiteLeague"><strong>affichage supplémentaire</strong></span> : <br />
+                le pourcentage de morts en plus et <span class="color_whiteLeague"><strong>l'emote</strong></span>
+                <strong><a href="https://betterttv.com/emotes/6518b687fc204fb5a94ca81d" target="_blank">Caught</a></strong> qui est
+                toujours utiliser au second degrès par la communauté <br /> cela permet de <span class="color_whiteLeague"><strong>réduire la graviter des stats</strong></span>
+                en indiquant que le projet n'est pas fait pour l'aspect compétitif mais multijoueur. <br />
+                <br />
+                Elle permet également de donner une image au projet et un <span class="color_whiteLeague"><strong>résumer très simple des stats</strong></span>.
+            </p>
+            <br />
+            <img src="Assets/LolCaught/LolCaught_Stats.png" class="center wh_11 border_black boxShadow_01">
+            <br />
+            <p class="center color_greyLeague">
+            En dessous, la section "Stats Graphs" qui <span class="color_whiteLeague"><strong>rejoint les deux profils en une comparaison</strong></span> 
+                au centre, l'objectif serait d'afficher plusieurs graphs de comparaison. <br />
+            J'ai fait un premier essai d'affichage de graphs de visualisation de données(ici le nombre de morts), <br />
+            c'est un point important du projet car <span class="color_whiteLeague"><strong>l'affichage en pourcentage seul ne suffisait pas</strong></span> à bien se représenter la différence.
+            </p>
+        </div>
+
+        <div class="card-panel z-depth-3 border_goldLeague bgcolor-lightDarkblue">
+            <!--Technique-->
+            <h5 class="center color_lightYellowLeague">- Technique -</h5>
+            <br />
+            <h6 class="center color_lightYellowLeague">Fonctionnement générale</h6>
+            <br />
+            <div class="center dGrid">
+                <img src="Assets/LolCaught/Tech_Classes.png" class="center border_black boxShadow_01 test">
+                <div>
+                    <img src="Assets/LolCaught/Tech_Summoners.png" class="center border_black boxShadow_01">
+                    <br />
+                    <p class="color_greyLeague tLeft padding_04">
+                        Il y a deux classes principales : <br />
+                        -<span class="color_whiteLeague"><strong>Summoner</strong></span> représente un joueur <br />
+                        <br />
+                        -<span class="color_whiteLeague"><strong>SummonerSearch</strong></span> représente la recherche d'un joueur <br />
+                        et les informations qu'on peut en tirer (ex: nombre de morts). <br />
+                        Le projet permet de chercher au maximums deux joueurs il faut donc deux instances de la classe SummonerSearch. <br />
+                        <br />
+                        C'est deux variables sont ensuite affichés avec <span class="color_whiteLeague"><strong>SummonerDisplay</strong></span> : <br />
+                    </p>
+                </div>
+            </div>
+            <br />
+            <img src="Assets/LolCaught/Tech_Display.png" class="center maxWh-01 border_black boxShadow_01">
+            <p class="center color_greyLeague">
+                Ce code est l'HTML principal du projet, <br />
+                SummonerDisplay vient d'un autre script, c'est une <span class="color_whiteLeague"><strong>fonction qui retourne l'HTML</strong></span> qui permet d'afficher <br />
+                tous ce qui est dupliqué entre les deux joueurs(champs de recherches, Icône, etc.) en utilisant principalement <br />
+                les informations contenues dans la variable de la class SummonerSearch mise en paramètre.
+            </p>
+            <br />
+            <h6 class="center color_lightYellowLeague">API/Axios</h6>
+            <p class="center color_greyLeague">
+                J'ai découvert et utiliser la <a href="https://developer.riotgames.com/docs/portal" target="_blank">doc de l'API</a> de Riot Games pour ce projet : <br />
+            </p>
+            <img src="Assets/LolCaught/Tech_API.png" class="center maxWh-01 border_black boxShadow_01">
+            <br />
+            <img src="Assets/LolCaught/Tech_SearchForPlayer.png" class="center maxWh-01 border_black boxShadow_01">
+            <p class="center color_greyLeague">
+                Chaque compte développeur riot a accès à sa <span class="color_whiteLeague"><strong>clef d'API</strong></span> (version de test) qui permet de communiquer avec l'API. <br />
+                <br />
+                Pour utiliser l'API Je commençais en utilisant la <a href="https://developer.riotgames.com/apis" target="_blank">Doc</a> pour
+                <span class="color_whiteLeague"><strong>trouver la fonctionnalité</strong></span> dont j'avais besoin et le
+                <span class="color_whiteLeague"><strong>lien associer</strong></span> <br />
+                par exemple pour trouver les <span class="color_whiteLeague"><strong>informations d'un compte</strong></span>, 
+                il faut ensuite constituer le lien (APICallRiotAcc) en récupérant le lien fourni <br />
+                et en remplaçant les variables par les bonnes informations (GameName, Tag fournis par l'utilisateur) et en ajoutant à la fin "?api_key=" + clef d'API <br />
+                qui permet de transmettre la clef pour s'identifier et pouvoir accéder aux informations <br />
+            </p>
+            <br />
+            <img src="Assets/LolCaught/Tech_GetLeagueVersion.png" class="center maxWh-01 border_black boxShadow_01">
+            <p class="center color_greyLeague">
+                Une fonction qui permet de <span class="color_whiteLeague"><strong>récupérer la version actuelle</strong></span> de league of legends, elle ne demande pas de clef. <br />
+                j'ai aussi découvert et utiliser <span class="color_whiteLeague"><strong>Axios</strong></span> dans ce projet.
+            </p>
+            <br />
+            <h6 class="center color_lightYellowLeague">Ce que j'ai appris</h6>
+            <p class="center color_greyLeague">
+                <span class="color_whiteLeague"><strong>1) API :</strong></span> <br />
+                Premier projet que j'ai développé en utilisant une API ce qui m'a permis de 
+                <span class="color_whiteLeague"><strong>compléter la théorie avec de la pratique</strong></span>. <br />
+                J'ai aussi utilisé <span class="color_whiteLeague"><strong>Axios</strong></span> pour la première fois. <br />
+                <br />
+                <span class="color_whiteLeague"><strong>2) React :</strong></span> <br />
+                Je suis plus à l'aise et j'ai pu apprendre de nouvelles choses avec React, <br />
+                comme le fait de pouvoir <span class="color_whiteLeague"><strong>enregistrer de l'HTML dans une variable</strong></span> pour l'afficher plus tard :
+            </p>
+            <img src="Assets/LolCaught/HtmlVariable.png" class="center border_black boxShadow_01">
+            <br />
+            <p class="center color_greyLeague">
+                <span class="color_whiteLeague"><strong>lambda expression</strong></span> en React/JS :
+            </p>
+            <div class="center dGrid">
+                <div>
+                    <img src="Assets/LolCaught/WaitCondition.png" class="center border_black boxShadow_01">
+                    <p class="center color_greyLeague">Fonction "waitCondition" avec deux paramètres utiliser comme fonctions</p>
+                </div>
+                <div>
+                    <img src="Assets/LolCaught/WaitCondition_02.png" class="center border_black boxShadow_01">
+                    <p class="center color_greyLeague">utilisation "waitCondition" avec des lambda expression</p>
+                </div>
+            </div>
+            <br />
+            <p class="center color_greyLeague">
+                <span class="color_whiteLeague"><strong>3) Ads -> AdSense :</strong></span> <br />
+                J'ai la volonté de <span class="color_whiteLeague"><strong>monétiser ce projet</strong></span>, e
+                n utilisant des pubs (Riot ne permet que d'utiliser des pubs pour la monétisation). <br />
+                J'ai donc fait une <span class="color_whiteLeague"><strong>veille</strong></span> sur l'affichage de pubs et j'ai déterminé plusieurs options :
+                <span class="color_whiteLeague"><strong>AdSense | Ad Mob | Ad Manager</strong></span>, après comparaison 
+                <a href="https://adsense.google.com/intl/fr_fr/start/" target="_blank">AdSense</a> avait l'air plus adapter à mon projet <br />
+                j'ai implémenter le bout de code qui à pour but d'afficher des pubs mais qui fonctionne 
+                qu'avec un projet en ligne même si j'ai vu qu'il étais possible de tester en locale. <br />
+                Note : le code pub n'est pas confidenciel. <br />
+            </p>
+            <img src="Assets/LolCaught/AdSenseCode.png" class="center border_black boxShadow_01">
+        </div>
+
+        <div class="card-panel z-depth-3 border_goldLeague bgcolor-lightDarkblue">
+            <!--Aller plus loin-->
+            <h5 class="center color_lightYellowLeague">- Aller Plus Loin -</h5>
+            <br />
+            <h6 class="center color_lightYellowLeague">Pourquoi le projet n'est pas publié?</h6>
+            <p class="center color_greyLeague">
+                <span class="color_whiteLeague"><strong>Sécurisation de la clef d'API :</strong></span> <br />
+                Il faut que j'apprenne à <span class="color_whiteLeague"><strong>cacher une clef d'API</strong></span> car c'est ce qui permet de s'identifier pour communiquer avec l'API. <br />
+                après des recherches j'ai vu qu'une technique pouvait être l'utilisation de fichiers .env mais d'après
+                <a href="https://stackoverflow.com/questions/48699820/how-do-i-hide-an-api-key-in-create-react-app/57103663#57103663" target="_blank">cette réponse</a> il faut utiliser des techniques plus complexes. <br />
+                <br />
+                <span class="color_whiteLeague"><strong>Validation Riot :</strong></span> <br />
+                <span class="color_whiteLeague"><strong>Avant de publier un projet</strong></span> qui utilise l'API de riot games il faut faire valider le projet par Riot Games.
+            </p>
+            <img src="Assets/LolCaught/RegisterProduct.png" class="center maxWh-01 border_black boxShadow_01">
+            <br />
+            <h6 class="center color_lightYellowLeague">Refaire/faire les visuels du projet</h6>
+            <p class="center color_greyLeague">
+                Je pense que le projet pourrait beaucoup bénéficier d'un style proche de cette page ou <a href="https://masterychart.com" target="_blank">Mastery Chart</a> <br />
+                qui sont inspirés des visuels du client league of legends. <br />
+            </p>
+            <br />
+            <h6 class="center color_lightYellowLeague">Autres :</h6>
+            <p class="center color_greyLeague">
+                Actuellement le projet ne fonctionne qu'avec des comptes en Europe, j'aimerais rendre le projet multi régions. <br />
+            </p>
+        </div>
+    </div>
+
+    <div class="col s3 m3">
+        <p class="center color_blueLeague">Github du projet</p>
+        <a href="https://github.com/BarbasOyun/Lol_Caught/tree/main" target="_blank"><img class="center wh_09 border_blueLeague" src="data:image/png;base64,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"></a>
+    </div>
+</body>
+</html>
