@@ -1,5 +1,7 @@
 <html>
 <head>
+    <meta charset="utf-8">
+    <title>Projet Tron</title>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
@@ -11,18 +13,13 @@
 </head>
 
 <body>
-    <!--#region Arrow + Title -->
-    <div class="pos_fix img_arrow">
-        <a href="index.html"><img src="Assets/BackArrow.png" class="wh_02"></a>
-    </div>
-
-    <h1 class="title_02 center margin_04 padding_02 light-blue-text text-lighten-2,">Tron Project</h1>
-    <!--#endregion -->
+    <a href="index.html"><img src="Assets/BackArrow.png" class="wh_02 pos_fix" style="z-index: 2;"></a>
+    <h4 class="center margin_04 padding_02 color_tronBlue">Tron Project</h4>
 
     <div class="container">
-        <div class="card-panel black lighten-2, z-depth-3">
-            <h1 class="title_02 center light-blue-text text-lighten-2,">Présentation du projet</h1>
-            <p class="center light-blue-text text-lighten-2,">
+        <div class="card-panel black z-depth-3">
+            <h5 class="center color_tronBlue">Présentation du projet</h5>
+            <p class="center color_tronBlue">
                 Le projet à pour objectif de créer un jeu en <strong><em>multijoueur</em></strong> local jouable à la <strong><em>manette</em></strong> qui recrée une bataille en arène des motos(lightcycle) de <strong><em>Tron</em></strong>,<br>
                 c'est aussi un de mes premiers projets réaliser en <strong><em>HDRP</em></strong>. Le projet a été réalisé en groupe.<br>                
                 <br>
@@ -34,7 +31,7 @@
                 Vous pouvez tester ce projet directement sur la page itch.io du projet(accessible en bas de cette page).
             </p>
 
-            <h1 class="title_02 center light-blue-text text-lighten-2,">Images du projet finale :</h1>
+            <h1 class="title_02 center color_tronBlue">Images du projet finale :</h1>
             <div class="row">
                 <div class="col s4 m4">
                     <img src="https://img.itch.zone/aW1hZ2UvODY5NTkzLzUyMTgyMDMucG5n/347x500/RlO7Vj.png" class="img_04">
@@ -58,33 +55,33 @@
     </div>
 
     <div class="container">
-        <div class="card-panel black lighten-2, z-depth-3">
-            <h1 class="title_02 center light-blue-text text-lighten-2,">Projet</h1>
-            <h3 class="title_02 light-blue-text text-lighten-2, underline">Générale :</h3>
-            <p class="light-blue-text text-lighten-2,">
+        <div class="card-panel black z-depth-3">
+            <h1 class="title_02 center color_tronBlue">Projet</h1>
+            <h3 class="title_02 color_tronBlue underline">Générale :</h3>
+            <p class="color_tronBlue">
                 Le projet se joue à la manette jusqu'à quatres joueurs, le deuxième étage de l'arène n'apparait que à partir de 3 joueur.<br>
                 Le but principale va être de <strong><em>détruire</em></strong> les motos ennemies en utilisant sont <strong><em>tracé et l'environement</em></strong>,<br>
                 pour sa les joueurs ont à leurs disposition sur l'arène des emplacement de boost qui vont remplire à moitier ou au maximum la jauge de boost du joueur(les emplacements les plus risqué rapporte le plus).
             </p>
 
-            <h3 class="title_02 light-blue-text text-lighten-2, underline">Technique(ma partie) :</h3>
-            <p class="light-blue-text text-lighten-2,">
+            <h3 class="title_02 color_tronBlue underline">Technique(ma partie) :</h3>
+            <p class="color_tronBlue">
                 Le projet est réaliser sur Unity en HDRP. J'ai créer l'arène avec des <strong><em>coins aroundits</em></strong> pour empécher les motos de trop se bloquer à certain moments,<br>
                 j'ai utiliser le composent de <strong><em>TrailRenderer</em></strong> pour le visuelle du trail, j'ai recréer le composent <strong><em>lineRenderer</em></strong><br>
                 (le composent lineRenderer est similaire au trailRenderer masi avec l'effet de tracé) avec un script ce qui ma permis de pourvoir modifier avec plus de paramètre le tracés des motos.
             </p>
 
-            <h3 class="title_02 light-blue-text text-lighten-2, underline">Code :</h3>
-            <p class="light-blue-text text-lighten-2,">              
+            <h3 class="title_02 color_tronBlue underline">Code :</h3>
+            <p class="color_tronBlue">              
                 Ce projet n'était pas très orienté code, j'ai quand même réaliser le code pour recréer le lineRenderer:
             </p>
             <img src="Assets/Tron_Code_01_Trail.PNG" class="img_06">
 
-            <h3 class="title_02 light-blue-text text-lighten-2, underline">Gif d'avancé du projet :</h3>
+            <h3 class="title_02 color_tronBlue underline">Gif d'avancé du projet :</h3>
             <img src="Assets/Tron Progress.gif" class="portfolioimg">
 
-            <h3 class="title_02 light-blue-text text-lighten-2, underline">Post mortem :</h3>
-            <p class="light-blue-text text-lighten-2">
+            <h3 class="title_02 color_tronBlue underline">Post mortem :</h3>
+            <p class="color_tronBlue">
                 C'était un de mes premier projet réaliser en HDRP j'ai beacoup appris sur beaucoup d'élements visuel de Unity comme : les particules, shaderGraph, HDRP, les materials.
             </p>
         </div>
