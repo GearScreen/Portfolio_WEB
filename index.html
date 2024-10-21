@@ -6,6 +6,9 @@
     <link rel="shortcut icon" href="favicon.ico" />
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <!--Import materialize.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="style.css">
@@ -13,19 +16,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
-<body class="font_01">
+<body class="anton-regular">
+    <!-- Summary -->
     <div class="pos_fix">
-        <h6 class="underline margin_01 color_lightExile"><strong>Contenu :</strong></h6>
+        <h6 class="underline margin_01 color_lightExile font_Impact"><strong>Contenu :</strong></h6>
         <p class="margin_07 color_progExile">
-            1) <a href="#Presentation" class="underline"><strong>Présentation</strong></a><br>
+            1) <a href="#Presentation" class="underline font_Impact"><strong>Présentation</strong></a><br>
             <br>
-            2) <span class=""><strong>Mes Projets :</strong></span><br>
+            2) <span class="font_Impact"><strong>Mes Projets :</strong></span><br>
             <span class="margin_07">- <a href="#ProjectsWeb" class="underline">Web</a></span><br>
             <span class="margin_07">- <a href="#ProjectsGames" class="underline">Jeux Vidéo</a></span><br>
             <br>
-            3) <a href="#Skills" class="underline"><strong>Compétences</strong></a><br>
+            3) <a href="#Skills" class="underline font_Impact"><strong>Compétences</strong></a><br>
             <br>
-            4) <a href="#Links" class="underline"><strong>Liens supplémentaires</strong></a><br>
+            4) <a href="#Links" class="underline font_Impact"><strong>Liens supplémentaires</strong></a><br>
         </p>
     </div>
 
@@ -43,17 +47,18 @@
         <!-- <p>You can translate the content of this page by selecting a language in the select box.</p> -->
     </div>
 
-    <h1 class="center color_lightExile" id="Presentation">Yoan Lechevalier</h1>
-    <h5 class="center color_progExile">Diplomé E-artsup Game & Creative Coding</h5>
+    <h1 class="center color_lightExile font_Impact" id="Presentation">Yoan Lechevalier</h1>
+    <h5 class="center color_progExile font_Impact">Diplomé E-artsup Game & Creative Coding</h5>
     <div class="center wh_02"></div>
 
     <div class="container">
         <div class="card-panel z-depth-3 bgcolor_infoExile">
-            <h4 class="center color_lightExile">- Présentation -</h4>
+            <h4 class="center color_lightExile font_Impact">- Présentation -</h4>
             <p class="center color_progExile fSize_02">
-                J'ai étudié pendant <strong>3 ans Unity</strong> et le C# et tout ce qu'il y a autour de la création de jeux vidéo. <br>
-                Sans totalement abandonner le jeu vidéo je suis actuellement en <strong>reconversion</strong> vers le <strong>web</strong> principalement en backend <br>
-                car j'ai déjà travaillé sur un projet avec une partie <strong>backend</strong> qui m'avais beaucoup plus.
+                J'ai étudié pendant <span class="color_lightYellowLeague"><strong>3 ans Unity</strong></span> et le C# et tout ce qu'il y a autour de la création de jeux vidéo. <br>
+                Sans totalement abandonner le jeu vidéo je suis actuellement en <span class="color_lightYellowLeague"><strong>reconversion</strong></span>
+                vers le <span class="color_lightYellowLeague"><strong>web</strong></span> principalement en backend <br>
+                car j'ai déjà travaillé sur un projet avec une partie <span class="color_lightYellowLeague"><strong>backend</strong></span> qui m'avais beaucoup plus.
             </p>
         </div>
     </div>
@@ -61,7 +66,7 @@
     <div class="container">
         <div class="card-panel z-depth-3 bgcolor_infoExile">
             <h4 class="center color_lightExile" id="ProjectsWeb">- Mes Projets -</h4>
-            <p class="center color_progExile fSize_02">Les projets apparaissent par ordre chronologique dans chaques catégorie</p>
+            <p class="center color_progExile fSize_02">Les projets apparaissent par ordre chronologique dans chaque catégorie</p>
             <div class="center wh_01"></div>
             <h5 class="center color_lightExile">- Web -</h5>
             <!-- Row 1 WEB -->
@@ -72,11 +77,13 @@
                             <img src="https://png.pngtree.com/template/20190508/ourmid/pngtree-wordpress-psd-icons-files-download-image_149410.jpg" class="border_black img_cover wh_14">
                         </div>
                         <div class="card-content">
-                            <span class="orange-text card-title">WordPress(WIP)</span>
-                            <p class="color_lightExile fSize_02">Projet <strong>WordPress</strong> ou j'ai créer un thème puis j'ai tester le FSE</p>
+                            <span class="card-title font_Impact color_orange">WordPress(WIP)</span>
+                            <p class="color_lightYellowLeague fSize_02">
+                                Projet <span class="color_lightExile"><strong>WordPress</strong></span> ou j'ai créer un thème puis j'ai tester le FSE
+                            </p>
                         </div>
                         <div class="card-action">
-                            <a href="Projet_WordPress.html">Page du projet</a>
+                            <a href="Projet_WordPress.html" class="font_Impact">Page du projet</a>
                         </div>
                     </div>
                 </div>
@@ -87,14 +94,15 @@
                             <img src="Assets/LolCaught/CAUGHT_02.png" class="border_goldLeague">
                         </div>
                         <div class="card-content">
-                            <span class="card-title color_yellowLeague">Lol Caught</span>
+                            <span class="card-title font_Impact color_yellowLeague">Lol Caught</span>
                             <p class="color_greyLeague fSize_02">
-                                C'est un projet personnel avec <span class="color_lightYellowLeague"><strong>React</strong></span> qui utilise <span class="color_lightYellowLeague"><strong>l'API de Riot Games</strong></span>
+                                C'est un projet personnel avec <span class="color_lightYellowLeague"><strong>React</strong></span> 
+                                qui utilise <span class="color_lightYellowLeague"><strong>l'API de Riot Games</strong></span>
                                 afin de comparé des stats entre deux joueurs, il n'est pas encore publié.
                             </p>
                         </div>
                         <div class="card-action">
-                            <a href="Projet_LolCaught.html">Page du projet</a>
+                            <a href="Projet_LolCaught.html" class="font_Impact">Page du projet</a>
                         </div>
                     </div>
                 </div>
@@ -105,11 +113,16 @@
                             <img src="https://i.imgur.com/Ztdzcwi.png" class="border_lightExile">
                         </div>
                         <div class="card-content">
-                            <span class="orange-text card-title">React App</span>
-                            <p class="color_lightExile fSize_02">Mon premier projet sur <strong>React</strong> et avec du <strong>JS</strong>, j'ai suivi le <a href="https://www.youtube.com/watch?v=j942wKiXFu8&list=PLgyIQ1sH69HqYjEHREUQKhDoLYNN4YAb3&index=3">tutoriel de Net Ninja</a> et je suis allé plus loin par moi-même</p>
+                            <span class="orange-text font_Impact card-title">React App</span>
+                            <p class="color_lightYellowLeague fSize_02">
+                                Mon premier projet sur <span class="color_lightYellowLeague"><strong>React</strong></span> et avec du 
+                                <span class="color_lightYellowLeague"><strong>JS</strong></span>, j'ai suivi le
+                                 <a href="https://www.youtube.com/watch?v=j942wKiXFu8&list=PLgyIQ1sH69HqYjEHREUQKhDoLYNN4YAb3&index=3"><u>tutoriel de Net Ninja</u></a> 
+                                 et je suis allé plus loin par moi-même.
+                            </p>
                         </div>
                         <div class="card-action">
-                            <a href="https://barbasoyun.github.io/ReactApp/" target="_blank">Projet</a>
+                            <a href="https://barbasoyun.github.io/ReactApp/" class="font_Impact" target="_blank">Projet</a>
                         </div>
                     </div>
                 </div>                
@@ -124,11 +137,15 @@
                                  class="border_black">
                         </div>
                         <div class="card-content">
-                            <span class="orange-text card-title">RiskHunt</span>
-                            <p class="color_lightExile fSize_02">Projet <strong>Unity</strong> et <strong>Web</strong> réaliser lors de mon <strong>alternance</strong> en 3ème année à e-artsup</p>
+                            <span class="orange-text font_Impact card-title">RiskHunt</span>
+                            <p class="color_lightYellowLeague fSize_02">
+                                Projet <span class="color_lightExile"><strong>Unity</strong></span> et 
+                                <span class="color_lightExile"><strong>Web</strong></span> réaliser lors de mon 
+                                <span class="color_lightExile"><strong>alternance</strong></span> en 3ème année à e-artsup
+                            </p>
                         </div>
                         <div class="card-action">
-                            <a href="Projet_RiskHunt.html">Page du projet</a>
+                            <a href="Projet_RiskHunt.html" class="font_Impact">Page du projet</a>
                         </div>
                     </div>
                 </div>
@@ -139,18 +156,20 @@
                             <img src="Assets/SoloLearn/SoloLearn_00.jpg">
                         </div>
                         <div class="card-content">
-                            <span class="orange-text card-title">Diplômes Autodidacte</span>
-                            <p class="color_lightExile fSize_02">Ce que j'apprends en <strong>autodidacte</strong> et comment</p>
+                            <span class="orange-text font_Impact card-title">Diplômes Autodidacte</span>
+                            <p class="color_lightYellowLeague fSize_02">
+                                Ce que j'apprends en <span class="color_lightExile"><strong>autodidacte</strong></span> et comment
+                            </p>
                         </div>
                         <div class="card-action">
-                            <a href="Page_Degrees.html">Page des diplômes</a>
+                            <a href="Page_Degrees.html" class="font_Impact">Page des diplômes</a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="center wh_02"></div>
-            <h5 class="center color_lightExile" id="ProjectsGames">- Jeux Vidéo -</h5>
+            <h5 class="center font_Impact color_lightExile" id="ProjectsGames">- Jeux Vidéo -</h5>
             <!-- Row 1 GAME -->
             <div class="row">
                 <div class="col s6 m4">
@@ -159,11 +178,14 @@
                             <img src="Assets/DE_Présentation.png">
                         </div>
                         <div class="card-content">
-                            <span class="orange-text card-title">Dashing Exploration</span>
-                            <p class="color_lightExile fSize_02">Mon premier projet pour <strong>Android</strong> avec <strong>Unity</strong>, il s'agit d'un jeu de platform</p>
+                            <span class="orange-text font_Impact card-title">Dashing Exploration</span>
+                            <p class="color_lightYellowLeague fSize_02">
+                                Mon premier projet pour <span class="color_lightExile"><strong>Android</strong></span> avec
+                                <span class="color_lightExile"><strong>Unity</strong></span>, il s'agit d'un jeu de platform
+                            </p>
                         </div>
                         <div class="card-action">
-                            <a href="Projet_DashingExploration.html">Page du projet</a>
+                            <a href="Projet_DashingExploration.html" class="font_Impact">Page du projet</a>
                         </div>
                     </div>
                 </div>
@@ -174,11 +196,14 @@
                             <img src="Assets/GameOfLifeCover.jpg">
                         </div>
                         <div class="card-content">
-                            <span class="orange-text card-title">The Game Of Life</span>
-                            <p class="color_lightExile fSize_02">Le <strong>jeu de la vie</strong> que je trouve fascinant et que j'ai recréé avec <strong>Unity</strong>, c'est un projet personnel</p>
+                            <span class="orange-text font_Impact card-title">The Game Of Life</span>
+                            <p class="color_lightYellowLeague fSize_02">
+                                Le <span class="color_lightExile"><strong>jeu de la vie</strong></span> que je trouve fascinant et que j'ai recréé
+                                 avec <span class="color_lightExile"><strong>Unity</strong></span>, c'est un projet personnel
+                            </p>
                         </div>
                         <div class="card-action">
-                            <a href="Projet_GameOfLife.html">Page du projet</a>
+                            <a href="Projet_GameOfLife.html" class="font_Impact">Page du projet</a>
                         </div>
                     </div>
                 </div>
@@ -189,11 +214,14 @@
                             <img src="https://img.itch.zone/aW1nLzkwMzY3OTQucG5n/315x250%23c/YVRGcO.png">
                         </div>
                         <div class="card-content">
-                            <span class="orange-text card-title">MultiPlayer Test</span>
-                            <p class="color_lightExile fSize_02">Mon premier projet en <strong>multijoueur</strong> online qui utilise <strong>Photon</strong></p>
+                            <span class="orange-text font_Impact card-title">MultiPlayer Test</span>
+                            <p class="color_lightYellowLeague fSize_02">
+                                Mon premier projet en <span class="color_lightExile"><strong>multijoueur</strong></span> online qui utilise 
+                                <span class="color_lightExile"><strong>Photon</strong></span>.
+                            </p>
                         </div>
                         <div class="card-action">
-                            <a href="Projet_MultiPlayerTest.html">Page du projet</a>
+                            <a href="Projet_MultiPlayerTest.html" class="font_Impact">Page du projet</a>
                         </div>
                     </div>
                 </div>
@@ -207,14 +235,14 @@
                             <img src="Assets/Arena_01.PNG">
                         </div>
                         <div class="card-content">
-                            <span class="card-title color_tronBlue">Tron project</span>
+                            <span class="card-title font_Impact color_tronBlue">Tron project</span>
                             <p class="color_tronBlue fSize_02">
                                 Ce projet fait en groupe de 3 pour un travail d'école se joue en multijoueur local,
-                                chaques joueurs contrôle une moto(lightcycle) et se bat dans une <strong>arène en équipe</strong>
+                                chaques joueurs contrôle une moto(lightcycle) et se bat dans une <em><strong>arène en équipe</strong></em>.
                             </p>
                         </div>
                         <div class="card-action">
-                            <a href="Projet_TronProject.html"><span class="color_tronBlue">Page du projet</span></a>
+                            <a href="Projet_TronProject.html"><span class="color_tronBlue font_Impact">Page du projet</span></a>
                         </div>
                     </div>
                 </div>
@@ -225,11 +253,13 @@
                             <img src="https://img.itch.zone/aW1nLzM2NDUzMDAucG5n/347x500/D5AHV%2F.png">
                         </div>
                         <div class="card-content">
-                            <span class="orange-text card-title">Toybox Warfare</span>
-                            <p class="color_lightExile fSize_02"> Projet de <strong>tower defence</strong> fin de première année</p>
+                            <span class="orange-text font_Impact card-title">Toybox Warfare</span>
+                            <p class="color_lightYellowLeague fSize_02">
+                                Projet de <span class="color_lightExile"><strong>tower defence</strong></span> fin de première année.
+                            </p>
                         </div>
                         <div class="card-action">
-                            <a href="Projet_ToyBoxWarfare.html">Page du projet</a>
+                            <a href="Projet_ToyBoxWarfare.html" class="font_Impact">Page du projet</a>
                         </div>
                     </div>
                 </div>
@@ -240,11 +270,13 @@
                             <img src="Assets/Skill Tree Cover.PNG" class="img_05">
                         </div>
                         <div class="card-content">
-                            <span class="orange-text card-title">Hack'n'Slash Template</span>
-                            <p class="color_lightExile fSize_02">C'est un projet personnel beaucoup <strong>orienté code</strong></p>
+                            <span class="orange-text font_Impact card-title">Hack'n'Slash Template</span>
+                            <p class="color_lightYellowLeague fSize_02">
+                                C'est un projet personnel beaucoup <span class="color_lightExile"><strong>orienté code</strong></span>.
+                            </p>
                         </div>
                         <div class="card-action">
-                            <a href="Projet_Hack'n'SlashTemplate.html">Page du projet</a>
+                            <a href="Projet_Hack'n'SlashTemplate.html" class="font_Impact">Page du projet</a>
                         </div>
                     </div>
                 </div>
@@ -258,11 +290,13 @@
                             <img src="Assets/ProtoBossFight.PNG" class="img_height_01">
                         </div>
                         <div class="card-content">
-                            <span class="orange-text card-title">Proto Boss Fight</span>
-                            <p class="color_lightExile fSize_02">Projet réalisé en quatre jour, c'est un <strong>boss fight</strong> en multijoueur locale</p>
+                            <span class="orange-text font_Impact card-title">Proto Boss Fight</span>
+                            <p class="color_lightYellowLeague fSize_02">
+                                Projet réalisé en quatre jour, c'est un <span class="color_lightExile"><strong>boss fight</strong></span> en multijoueur locale.
+                            </p>
                         </div>
                         <div class="card-action">
-                            <a href="Projet_ProtoBossFight.html">Page du projet(WIP)</a>
+                            <a href="Projet_ProtoBossFight.html" class="font_Impact">Page du projet(WIP)</a>
                         </div>
                     </div>
                 </div>
@@ -272,7 +306,7 @@
 
     <div class="container">
         <div class="card-panel z-depth-3 bgcolor_infoExile">
-            <h4 class="center color_lightExile" id="Skills">- Compétences -</h4>
+            <h4 class="center font_Impact color_lightExile" id="Skills">- Compétences -</h4>
             <div class="center wh_02"></div>
             <div class="center grid-4 wh_10">
                 <div class="wh_08 margin_10">                   
@@ -293,24 +327,24 @@
 
     <div class="container">
         <div class="card-panel z-depth-3 bgcolor_infoExile">
-            <h4 class="center color_lightExile" id="Links">- Liens supplémentaires -</h4>
+            <h4 class="center font_Impact color_lightExile" id="Links">- Liens supplémentaires -</h4>
             <div class="center wh_02"></div>
             <div class="center dGrid grid_02 wh_10">
                 <div class="wh_08 margin_10">                   
                     <a href="https://yoan-lechevalier.itch.io/" target="_blank">
-                        <h6 class="center color_lightExile"><strong>page Itch.io :</strong></h6>
+                        <h6 class="center font_Impact color_lightExile"><strong>page Itch.io :</strong></h6>
                         <img src="https://static.itch.io/images/app-icon.png" class="wh_08">
                     </a>
                 </div>
                 <div class="wh_08 margin_10">    
                     <a href="https://www.linkedin.com/in/yoan-lechevalier/" target="_blank">
-                        <h6 class="center color_lightExile"><strong>LinkedIn(CV) :</strong></h6>
+                        <h6 class="center font_Impact color_lightExile"><strong>LinkedIn(CV) :</strong></h6>
                         <img src="https://img.freepik.com/vecteurs-premium/linkedin-logo_578229-227.jpg" class="wh_08 border_black">
                     </a>
                 </div>
                 <div class="wh_08 margin_10">    
                     <a href="https://github.com/BarbasOyun" target="_blank">
-                        <h6 class="center color_lightExile"><strong>GitHub :</strong></h6>
+                        <h6 class="center font_Impact color_lightExile"><strong>GitHub :</strong></h6>
                         <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" class="wh_08 border_black">
                     </a>
                 </div>

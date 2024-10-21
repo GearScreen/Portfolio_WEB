@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -5,6 +6,7 @@
     <link rel="shortcut icon" href="favicon.ico" />
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <!--Import materialize.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="style.css">
@@ -24,86 +26,150 @@
     </script>
 </head>
 
-<body class="bg_color_whitePaper font_01">
+<body class="bg_color_whitePaper anton-regular ">
     <div id="header"></div>
     <div class="center wh_01"></div>
     <div class="container">
         <div class="card-panel z-depth-3 bg_color_blueLab">
-            <h4 class="center">- Présentation du projet -</h4>
-            <p class="center">
-                Projet réaliser sur 1 mois ou j'ai découvert WordPress, j'ai d'abord commencer en créerent un thème puis
-                je suis passer sur du FSE </br>
-                En Suivant la <a href="https://capitainewp.io/formations/developper-theme-wordpress/" class="color_lightExile"><u>Formation</u></a> de capitaineWP. </br>
+            <h4 class="center font_Impact">- Présentation du projet -</h4>
+            <p class="center fSize_02">
+                <span class="title_02">P</span>rojet réalisé sur 1 mois où j'ai découvert <span class="color_orange tBorder_Black"><strong>WordPress</strong></span>, 
+                j'ai d'abord commencé en créant un <span class="color_orange tBorder_Black"><strong>thème</strong></span> puis je suis passé sur du 
+                <span class="color_orange tBorder_Black"><strong>FSE</strong></span> </br>
+                En suivant la <a href="https://capitainewp.io/formations/developper-theme-wordpress/" target="_blank" class="color_blue"><u>Formation de capitaineWP</u></a>
+                où j'ai créé le template d'un site vitrine d'entreprise. </br>
             </p>
             <div class="center wh_01"></div>
+            <p class="center fSize_02">
+                Image du Projet Finale : 
+            </p>
             <img src="Assets/WordPress/Wp_Home.png" class="wh_16 center border_black boxShadow_01"><img>
         </div>
     </div>
 
     <div class="container">
         <div class="card-panel z-depth-3 bg_color_blueLab">
-            <h4 class="center">- Technique -</h4>
-            <h5 class="center">- MAMP -</h5>
-            <p class="center">
-                MAMP </br>
+            <h4 class="center font_Impact">- Technique -</h4>
+            <h5 class="center font_Impact">- MAMP -</h5>
+            <p class="center fSize_02">
+                <span class="title_02">J'</span>ai utilisé <span class="color_orange tBorder_Black"><strong>MAMP</strong></span> pour le développement 
+                avec un serveur local avec <span class="color_orange tBorder_Black"><strong>Phpmyadmin</strong></span> pour la Base de Données. </br>
+                MAMP m’a posé plusieurs problèmes, je pense que <a href="https://localwp.com/" target="_blank" class="color_blue"><u>Local By FlyWheel</u></a> 
+                est une meilleure options avec plus de fonctionalité. </br>
             </p>
-            <img src="Assets/WordPress/Wp_Mamp.png" class="wh_16 center border_black boxShadow_01"><img>
+            <img src="Assets/WordPress/Wp_Mamp.png" class="wh_18 center border_black boxShadow_01"><img>
+            <div class="center wh_01"></div>
 
-            <h5 class="center">- WordPress Admin Dashboard -</h5>
-            <p class="center">
-                WordPress Admin Dashboard </br>
-                </br>
+            <h5 class="center font_Impact">- WordPress Admin -</h5>
+            <p class="center fSize_02">
+                <span class="color_orange tBorder_Black"><strong><span class="title_02">W</span>ordPress</strong></span> fonctionne avec une partie 
+                <span class="color_orange tBorder_Black"><strong>admin</strong></span> sur le site, qui permet d'accéder à toutes </br>
+                Les fonctionnalités de WordPress qu'on peut voir dans la barre de gauche.
             </p>
             <img src="Assets/WordPress/WP_Dashboard.png" class="wh_16 center border_black boxShadow_01"><img>
             <div class="center wh_01"></div>
-            <p class="center">
-                Pages </br>
+
+            <h5 class="center font_Impact">- Custom Theme -</h5>
+            <p class="center fSize_02">
+                <span class="title_02">L</span>e <span class="color_orange tBorder_Black"><strong>thème</strong></span> dans WordPress représente 
+                le style global du site comme un fichier CSS mais va plus loin. </br>
+                WordPress propose des thèmes de base (nommés en fonction de l'année de sortie). </br>
                 </br>
+                Pour avoir un maximum de <span class="color_orange tBorder_Black"><strong>contrôle</strong></span> sur le site, 
+                l'objectif était de créer un <span class="color_orange tBorder_Black"><strong>Custom Theme</strong></span> appelé Theme_01 </br>
+                Un Custom Theme est représenté par un dossier qui peut contenir plusieurs fichiers .php qui représentent chacun une fonctionnalité de WordPress </br>
+                Mais le fichier style.css qui déclare le thème suffit. </br>
+               </br>
+                Afin de créer des posts de test pour tester leur affichage avec le thème, j'ai utilisé le 
+                <span class="color_orange tBorder_Black"><strong>plugin FakerPress</strong></span> </br>
+                Voilà la dans la partie admin, la liste des posts. La plupart ont été créés par FakerPress.
+            </p>
+            <img src="Assets/WordPress/WP_Posts.png" class="wh_16 center border_black boxShadow_01"><img>
+            <div class="center wh_01"></div>
+
+            <h5 class="center font_Impact">- Pages -</h5>
+            <p class="center fSize_02">
+                <span class="title_02">L</span>es <span class="color_orange tBorder_Black"><strong>Pages</strong></span> sont une partie importante, 
+                elles représentent les principaux fichiers HTML du site, </br>
+                Wordpress permet de <span class="color_orange tBorder_Black"><strong>taguer certaines pages</strong></span> spécifiques comme "Posts Page, Front Page". </br>
             </p>
             <img src="Assets/WordPress/WP_Pages.png" class="wh_16 center border_black boxShadow_01"><img>
             <div class="center wh_01"></div>
-            <h5 class="center">- Thème -</h5>
-            <p class="center">
-                thème_01 </br>
-                Faker Press </br>
-            </p>
-            <img src="Assets/WordPress/WP_Posts.png" class="wh_16 center border_black boxShadow_01"><img>
-            <p class="center">              
-                ACF </br>
-                *ACF IMAGE* </br>
-            </p>
 
-            <p class="center">              
-                Google Map </br>
+            <h5 class="center font_Impact">- ACF -</h5>
+            <p class="center fSize_02">              
+                <span class="title_02">A</span>dvanced Custom Field est un <span class="color_orange tBorder_Black"><strong>plugin</strong></span> très populaire 
+                qui permet de créer des <span class="color_orange tBorder_Black"><strong>groupes de variables</strong></span> assignables </br>
+                à différentes pages, ces groupes peuvent ensuite être remplis en éditant la page </br>
             </p>
-            <img src="Assets/WordPress/WP_GoogleMap.png" class="wh_16 center border_black boxShadow_01"><img>
+            <img src="Assets/WordPress/WP_ACF.png" class="wh_16 center border_black boxShadow_01"><img>
 
-            <h5 class="center">- FSE -</h5>
-            <p class="center">
-                Red_Roc -> thème FSE </br>
+            <h5 class="center font_Impact">- Google Map -</h5>
+            <p class="center fSize_02">              
+                <span class="title_02">J'</span>ai appris à intégrer une carte <span class="color_orange tBorder_Black"><strong>Google Maps</strong></span> 
+                lors de ce projet qui est une technique pas spécifiquement lié à WordPress. </br>
+                En Dessous il y'a un <span class="color_orange tBorder_Black"><strong>Google Calendar</strong></span> que j'ai aussi intégré.
+            </p>
+            <img src="Assets/WordPress/WP_GoogleMap.png" class="wh_18 center border_black boxShadow_01"><img>
+            <div class="center wh_01"></div>
+
+            <h5 class="center font_Impact">- FSE -</h5>
+            <p class="center fSize_02">
+                <span class="title_02">A</span>près avoir créé le premier thème, j'ai créé un second : <span class="color_orange tBorder_Black"><strong>Red_Roc</strong></span>
+                (<a href="https://en.wikipedia.org/wiki/Roc_(mythology)" target="_blank" class="color_blue"><u>Qu'est-ce qu'un Roc?</u></a>) qui est un thème en 
+                <span class="color_orange tBorder_Black"><strong>FSE</strong></span> </br>
+                (Full Site Editing) cette fois, c'est-à-dire qu'il se base sur un des thèmes de base que je modifie </br>
+                ensuite avec les <span class="color_orange tBorder_Black"><strong>outils de WordPress</strong></span> sans trop toucher à du code. </br>
+                </br>
+                Je me suis écarté de la formation avec ce thème en partie car j'étais plus à l'aise avec WordPress.
             </p>
             <img src="Assets/WordPress/WP_Themes.png" class="wh_16 center border_black boxShadow_01">
             <div class="center wh_01"></div>
-            <p class="center">
-                FSE </br>
-            </p>
-            <img src="Assets/WordPress/WP_Editor.png" class="wh_17 border_black boxShadow_01">
-            <div class="center wh_01"></div>
-            <p class="center">
-                Editeur de pages </br>
+
+            <div class="center dGrid grid_02 wh_10">
+                <div class="">                   
+                    <img src="Assets/WordPress/WP_Editor.png" class="wh_17 border_black boxShadow_01">
+                </div>
+                <div class="">    
+                    <p class="center fSize_02">
+                        <span class="title_02">S</span>ur l'image du dessus, on peut voir qu'à gauche, en dessous de Appearance, il y a Themes et </br>
+                        <span class="color_orange tBorder_Black"><strong>Editor</strong></span> : cliquer sur Editor permet d'accéder au 
+                        <span class="color_orange tBorder_Black"><strong>outils FSE</strong></span> </br>
+                         qui a aussi un menu sur la gauche que l'on peut voir sur l'image à gauche.
+                    </p>
+                </div>
+            </div>
+            <div class="center wh_18"></div>
+
+            <p class="center fSize_02">
+                <span class="title_02">V</span>oilà l'<span class="color_orange tBorder_Black"><strong>éditeur de page</strong></span> en FSE qui fonctionne avec des
+                <span class="color_orange tBorder_Black"><strong>blocs</strong></span> comme le bloc de text ou image, </br>
+                à gauche il y'a la <span class="color_orange tBorder_Black"><strong>hiérarchie des éléments la page</strong></span>
+                Et à droite les <span class="color_orange tBorder_Black"><strong>options pour chaque bloc</strong></span>. </br>
+                Il y'a aussi deux éléments spéciaux <span class="color_orange tBorder_Black"><strong>Header</strong></span> et 
+                <span class="color_orange tBorder_Black"><strong>Footer</strong></span> qui sont construits à part.
             </p>
             <img src="Assets/WordPress/WP_FSE.png" class="wh_16 center border_black boxShadow_01">
             <div class="center wh_01"></div>
-            <p class="center">
-                Color palette </br>
-                </br>
-            </p>
-            <img src="Assets/WordPress/WP_Palette.png" class="wh_17 center border_black boxShadow_01">
-            <div class="center wh_01"></div>
-            <p class="center">
-                Header/Footer </br>
-                Templates </br>
-                </br>
+
+            <div class="center dGrid grid_02 wh_10">
+                <div class="">
+                    <p class="center fSize_02">
+                        <span class="title_02">L</span>a <span class="color_orange tBorder_Black"><strong>Color palette</strong></span> est une partie importante 
+                        et sûrement la première chose à faire lors de la création d'un thème </br>
+                         car elle permet de <span class="color_orange tBorder_Black"><strong> définir une palette de couleurs pour le thème</strong></span>.
+                    </p>         
+                </div>
+                <div class="">    
+                    <img src="Assets/WordPress/WP_Palette.png" class="wh_17 border_black boxShadow_01">
+                </div>
+            </div>
+            <div class="center wh_18"></div>
+
+            <p class="center fSize_02">
+                <span class="title_02">L</span>es <span class="color_orange tBorder_Black"><strong>Templates</strong></span> sont également une partie importante 
+                du FSE, ils permettent de définir l'<span class="color_orange tBorder_Black"><strong>apparence des pages principales</strong></span> </br>
+                de WordPress comme la page des blogs où tous les posts sont listés. </br>
             </p>
             <img src="Assets/WordPress/WP_Templates.png" class="wh_16 center border_black boxShadow_01">
         </div>
@@ -111,11 +177,19 @@
 
     <div class="container">
         <div class="card-panel z-depth-3 bg_color_blueLab">
-            <h5 class="center">- Conclusion -</h5>
-            <p class="center">
-                Conclusion </br>
-                WordPress = petit projets </br>
-                React = Gros Projets </br>
+            <h5 class="center font_Impact">- Conclusion -</h5>
+
+            <p class="margin_15">
+                <span class="title_02">W</span>ordPress me paraît être un très bon outil principalement pour deux choses : </br>
+            </br>
+                1) Rapidité </br>
+                Après ce projet, il me paraît qu'il est possible de créer extrêmement rapidement des projets, surtout s'ils suivent bien un template. </br>
+            </br>
+                2) Customisation </br>
+                La partie admin est relativement simple à utiliser et peut être customiser et WordPress permet de donner l'accès à d'autres gens, comme des clients </br>
+                qui peuvent ensuite faire leurs propres modifications. </br>
+            </br>
+                Cependant, pour un plus gros projet et qui correspondrait moins à un template, j'aurais plutôt tendance à utiliser React.
             </p>
         </div>
     </div>

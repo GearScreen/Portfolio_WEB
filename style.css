@@ -39,6 +39,18 @@ body {
     text-align: left;
 }
 
+.tBorder_Black {
+    -webkit-text-stroke: 1px black; /* width and color */
+}
+
+.tBorder_White {
+    -webkit-text-stroke: .3px white; /* width and color */
+}
+
+.tBorder_T {
+    -webkit-text-stroke: .4px black; /* width and color */
+}
+
 .title_01 {
     font-size: 400%;
 }
@@ -63,8 +75,15 @@ body {
     font-size: 120%;
 }
 
-.font_01 {
-    font-family: fantasy, sans-serif;
+.font_Impact {
+    font-family: Impact, sans-serif;
+    font-weight: 400;
+}
+
+.anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 /*#endregion*/
 
@@ -94,6 +113,10 @@ body {
 
 .color_white {
     color: white;
+}
+
+.color_orange {
+    color: #ff9800;
 }
 
 .color_orangeAdmin {
@@ -178,6 +201,14 @@ body {
 
 .color_whitePaper {
     color: #f2f2f2;
+}
+
+.color_shadowPurple {
+    color: #330033;
+}
+
+.color_hotOrange {
+    color: #ff4500;
 }
 
 /*#endregion*/
@@ -336,6 +367,14 @@ body {
     grid-template-columns: auto auto auto;
 }
 
+.grid_03 {
+    grid-template-columns: 25% 75%;
+}
+
+.grid_04 {
+    grid-template-columns: 75% 25%;
+}
+
 /*#region Positions*/
 
 .pos_rel {
@@ -445,6 +484,11 @@ body {
     margin-left: 10%;
     margin-right: 10%;
 }
+
+.margin_15 {
+    margin-left: 15%;
+}
+
 
 .padding_01 {
     padding: 10% 10% 10% 10%;
@@ -556,6 +600,19 @@ body {
     height: 36em;
 }
 
+/*Ratio : 1.1*/
+.wh_18 {
+    width: 32em;
+    height: 29em;
+}
+
+.wh_18 {
+    height: 25em;
+}
+
+.wh_19 {
+    width: 33em;
+}
 
 .whPe_01 {
     width: 75%;
