@@ -333,6 +333,11 @@ body {
     text-align: center;
 }
 
+.verticalALign{
+    vertical-align: middle;
+    display: inline-block;
+}
+
 .display_inlineBlock {
     display: inline-block;
 }
@@ -373,6 +378,10 @@ body {
 
 .grid_04 {
     grid-template-columns: 75% 25%;
+}
+
+.grid_05 {
+    grid-template-columns: auto auto auto auto;
 }
 
 /*#region Positions*/
@@ -612,6 +621,11 @@ body {
 
 .wh_19 {
     width: 33em;
+}
+
+.wh_20 {
+    width: 9em;
+    height: 9em;
 }
 
 .whPe_01 {
