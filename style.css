@@ -40,15 +40,18 @@ body {
 }
 
 .tBorder_Black {
-    -webkit-text-stroke: 1px black; /* width and color */
+    -webkit-text-stroke: 1px black;
+    /* width and color */
 }
 
 .tBorder_White {
-    -webkit-text-stroke: .3px white; /* width and color */
+    -webkit-text-stroke: .3px white;
+    /* width and color */
 }
 
 .tBorder_T {
-    -webkit-text-stroke: .4px black; /* width and color */
+    -webkit-text-stroke: .4px black;
+    /* width and color */
 }
 
 .title_01 {
@@ -85,6 +88,7 @@ body {
     font-weight: 400;
     font-style: normal;
 }
+
 /*#endregion*/
 
 /*#region Colors*/
@@ -171,7 +175,7 @@ body {
     color: rgb(219, 210, 193);
 }
 
-.color_darkExile{
+.color_darkExile {
     color: #0f0f0f;
 }
 
@@ -271,7 +275,7 @@ body {
     background-color: rgb(34, 45, 71);
 }
 
-.bgcolor_darkExile{
+.bgcolor_darkExile {
     background-color: #0f0f0f;
 }
 
@@ -301,7 +305,7 @@ body {
 }
 
 .border_blueAdmin {
-    border: solid;   
+    border: solid;
     border-color: var(--BlueAdmin);
 }
 
@@ -333,7 +337,7 @@ body {
     text-align: center;
 }
 
-.verticalALign{
+.verticalAlign {
     vertical-align: middle;
     display: inline-block;
 }
@@ -432,7 +436,7 @@ body {
     margin: 0 0 0 0;
 }
 
-.margin_01{
+.margin_01 {
     margin-left: 5%;
     margin-right: auto;
 }
@@ -481,7 +485,7 @@ body {
 }
 
 .margin_12 {
-    margin-left: -15%;    
+    margin-left: -15%;
 }
 
 .margin_13 {
@@ -504,7 +508,7 @@ body {
 }
 
 .padding_02 {
-    padding-top: 2%;   
+    padding-top: 2%;
 }
 
 .padding_03 {
@@ -593,7 +597,7 @@ body {
     height: 15em;
 }
 
-.wh_15 {    
+.wh_15 {
     height: 9em;
 }
 
@@ -626,6 +630,14 @@ body {
 .wh_20 {
     width: 9em;
     height: 9em;
+}
+
+.wh_21 {
+    height: 2em;
+}
+
+.wh_22 {
+    height: 1.5em;
 }
 
 .whPe_01 {
@@ -734,7 +746,7 @@ body {
     height: 280px;
 }
 
-.img_width_01{
+.img_width_01 {
     width: 200px;
     height: 100px;
 }
@@ -769,6 +781,7 @@ body {
 /*#endregion*/
 
 /*#region Backgrounds*/
+
 .bg_cardboard {
     background: url(https://s3.envato.com/files/333246909/IMG_0379.jpg);
 }
@@ -780,6 +793,7 @@ body {
     background-size: cover;
     position: relative;
 }
+
 /*#endregion*/
 
 /*#region Elements*/
@@ -824,6 +838,7 @@ body {
 /*#endregion*/
 
 /*#region Misc*/
+
 .underline {
     text-decoration: underline;
 }
@@ -835,6 +850,45 @@ body {
 .boxShadow_02 {
     box-shadow: 2px 2px 5px black;
 }
+
+/* #region Unwrapper */
+/* Basic styling for the unwrapper */
+.unwrapper {
+    margin: 20px auto;
+    border: 1px solid;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+.unwrapper-content {
+    padding: 1%;
+}
+
+.unwrapper-toggle-button {
+    width: 100%;
+    padding: 1%;
+    background-color: #88765c;
+    border: none;
+    cursor: pointer;
+    font-size: 200%;
+    border-radius: 0 0 8px 8px;
+}
+
+.unwrapper-toggle-button:hover {
+    background-color: #6a5c48;
+}
+
+.unwrapper-toggle-button:focus {
+    background-color: #88765c;
+}
+
+.unwrapper-collapsed {
+    display: none !important;
+}
+
+/*#endregion*/
+
 /*#endregion*/
 
 /*#region Extension*/

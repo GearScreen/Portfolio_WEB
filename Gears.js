@@ -19,3 +19,20 @@ function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+//Unwrapper
+function toggleUnwrapper(unwrapperId, buttonUnwrapText = "Unwrap", buttonWrapText = "Wrap") {
+    const unwrapper = document.getElementById(unwrapperId);
+    const button = unwrapper.querySelector('.unwrapper-toggle-button');
+    const content = unwrapper.querySelector('.unwrapper-content');
+
+    // Toggle the collapsed class
+    content.classList.toggle('unwrapper-collapsed');
+
+    // Change button text based on the state
+    if (content.classList.contains('unwrapper-collapsed')) {
+        button.textContent = buttonUnwrapText;
+    } else {
+        button.textContent = buttonWrapText;
+    }
+}
