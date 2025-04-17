@@ -21,7 +21,7 @@ function topFunction() {
 }
 
 //Unwrapper
-function toggleUnwrapper(unwrapperId, buttonUnwrapText = "Unwrap", buttonWrapText = "Wrap") {
+function toggleUnwrapper(unwrapperId, buttonUnwrapText = "Unwrap", buttonWrapText = "Wrap", imagePaths = []) {
     const unwrapper = document.getElementById(unwrapperId);
     const button = unwrapper.querySelector('.unwrapper-toggle-button');
     const content = unwrapper.querySelector('.unwrapper-content');
@@ -29,10 +29,13 @@ function toggleUnwrapper(unwrapperId, buttonUnwrapText = "Unwrap", buttonWrapTex
     // Toggle the collapsed class
     content.classList.toggle('unwrapper-collapsed');
 
+    // Generate image HTML from the list of image paths
+    const imagesHTML = imagePaths.map(path => `<img src="${path}" class="wh_23 verticalAlign">`).join(' ');
+
     // Change button text based on the state
     if (content.classList.contains('unwrapper-collapsed')) {
-        button.textContent = buttonUnwrapText;
+        button.innerHTML = `<img src="Assets/right-arrow.png" class="wh_23 float_left"> ${buttonUnwrapText} ${imagesHTML}`;
     } else {
-        button.textContent = buttonWrapText;
+        button.innerHTML = `<img src="Assets/down-arrow.png" class="wh_23 float_left"> ${buttonWrapText} ${imagesHTML}`;
     }
 }

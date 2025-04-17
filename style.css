@@ -358,6 +358,8 @@ body {
     display: flex;
 }
 
+/*#region Grid*/
+
 .dGrid {
     display: grid;
     grid-template-columns: auto auto;
@@ -366,6 +368,11 @@ body {
 .grid-4 {
     display: grid;
     grid-template-columns: auto auto auto auto;
+}
+
+.grid-5 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
 }
 
 .grid_01 {
@@ -387,6 +394,8 @@ body {
 .grid_05 {
     grid-template-columns: auto auto auto auto;
 }
+
+/*#endregion*/
 
 /*#region Positions*/
 
@@ -420,6 +429,10 @@ body {
 
 .float_01 {
     float: right;
+}
+
+.float_left {
+    float: left;
 }
 
 /*#endregion*/
@@ -640,6 +653,11 @@ body {
     height: 1.5em;
 }
 
+.wh_23 {
+    width: 1em;
+    height: 1em;
+}
+
 .whPe_01 {
     width: 75%;
 }
@@ -776,6 +794,10 @@ body {
 
 .img_cover {
     object-fit: cover;
+}
+
+.Filter_01 {
+    filter: invert(100%);
 }
 
 /*#endregion*/
